@@ -1,0 +1,3300 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PT PERINTIS TRANSMISI ASIA - Rekayasa & Kontraktor</title>
+    <meta name="description" content="PT Perintis Transmisi Asia adalah kontraktor rekayasa dan konstruksi terpercaya di Indonesia, melayani konstruksi sipil & bangunan, sistem transmisi & listrik, perencanaan & perancangan, hingga manajemen proyek.">
+    <meta name="keywords" content="kontraktor konstruksi, rekayasa sipil, transmisi listrik, kontraktor Indonesia, Perintis Transmisi Asia, konstruksi infrastruktur">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="PT Perintis Transmisi Asia">
+
+    <!-- Open Graph (tampilan saat link dibagikan di WhatsApp/Facebook/dll) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="PT PERINTIS TRANSMISI ASIA - Rekayasa & Kontraktor">
+    <meta property="og:description" content="Mitra profesional dalam perencanaan, rekayasa teknik sipil, dan pembangunan infrastruktur industri dengan mutu terjamin.">
+    <meta property="og:locale" content="id_ID">
+<meta property="og:site_name" content="PT Perintis Transmisi Asia">
+<meta property="og:url" content="https://perintistransmisiasia.co.id/">
+<meta property="og:image" content="https://perintistransmisiasia.co.id/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Logo PT Perintis Transmisi Asia - Rekayasa &amp; Kontraktor">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="PT PERINTIS TRANSMISI ASIA - Rekayasa &amp; Kontraktor">
+<meta name="twitter:image" content="https://perintistransmisiasia.co.id/og-image.jpg">
+<link rel="canonical" href="https://perintistransmisiasia.co.id/">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"PT Perintis Transmisi Asia","url":"https://perintistransmisiasia.co.id/","logo":"https://perintistransmisiasia.co.id/favicon.png"}</script>
+
+    <!-- Favicon (ikon tab browser), dibuat dari logo PTA -->
+    <link rel="preload" as="image" href="foto/hero-1.webp" imagesrcset="foto/hero-1-800.webp 800w, foto/hero-1.webp 1400w" imagesizes="(max-width: 768px) 260px, 100vw" fetchpriority="high">
+<link rel="icon" href="favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" href="favicon.png" sizes="512x512">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <meta name="theme-color" content="#141c2b">
+    
+    <style>
+        /* ============================================================
+           RESET & VARIABEL WARNA
+           ============================================================ */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        :root {
+            --soft-navy: #141c2b;
+            --card-navy: #1e2a3a;
+            --bright-yellow: #FFE600;
+            --bright-yellow-hover: #ffd700;
+            --whatsapp-green: #25D366;
+            --light-bg: #f8fafc;
+            --text-dark: #0f172a;
+            --text-muted: #64748b;
+            --maps-red: #ea4335;
+        }
+
+        body {
+            background-color: var(--light-bg);
+            color: var(--text-dark);
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* ============================================================
+           NAVIGASI HALAMAN (SPA-STYLE) — BARU
+           Secara default hanya bagian dengan class "active" yang tampil.
+           Menu di drawer akan memanggil showPage() untuk berpindah
+           antar bagian tanpa scrolling.
+           ============================================================ */
+        .page-section {
+            display: none;
+        }
+
+        .page-section.active {
+            display: block;
+        }
+
+        .hero.page-section.active {
+            display: flex;
+        }
+
+        /* ============================================================
+           SPLASH SCREEN / ANIMASI INTRO LOGO
+           ============================================================ */
+        #splash-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: var(--soft-navy);
+            z-index: 99999;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: opacity 0.6s ease, visibility 0.6s ease;
+            overflow: hidden;
+        }
+
+        #splash-screen.hidden {
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+        }
+
+        .splash-ring {
+            position: absolute;
+            width: 320px;
+            height: 320px;
+            border: 3px solid transparent;
+            border-top: 3px solid var(--bright-yellow);
+            border-right: 3px solid rgba(255, 230, 0, 0.3);
+            border-radius: 50%;
+            animation: spinRing 2s linear infinite;
+        }
+
+        .splash-logo-wrapper {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .splash-logo-container {
+            background: #ffffff;
+            padding: 20px 35px;
+            border-radius: 16px;
+            box-shadow: 0 0 30px rgba(255, 230, 0, 0.35);
+            animation: zoomInLogo 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+        }
+
+        .splash-logo-container svg {
+            width: 260px;
+            max-width: 75vw;
+            height: auto;
+            display: block;
+        }
+
+        .animated-arc {
+            stroke-dasharray: 300;
+            stroke-dashoffset: 300;
+            animation: drawArc 1.2s ease-in-out forwards 0.3s;
+        }
+
+        .splash-loader-bar {
+            width: 180px;
+            height: 4px;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 4px;
+            margin-top: 30px;
+            overflow: hidden;
+        }
+
+        .splash-progress {
+            width: 0%;
+            height: 100%;
+            background: var(--bright-yellow);
+            border-radius: 4px;
+            animation: fillProgress 1.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+        }
+
+        .splash-text {
+            color: #cbd5e1;
+            font-size: 12px;
+            font-weight: 700;
+            margin-top: 12px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        @keyframes spinRing {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        @keyframes zoomInLogo {
+            0% { transform: scale(0.6); opacity: 0; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        @keyframes drawArc {
+            to { stroke-dashoffset: 0; }
+        }
+
+        @keyframes fillProgress {
+            0% { width: 0%; }
+            100% { width: 100%; }
+        }
+
+        /* ============================================================
+           HEADER & NAVIGATION
+           ============================================================ */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 12px 0;
+            z-index: 1000;
+            background: rgba(20, 28, 43, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 2px solid rgba(255, 230, 0, 0.3);
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-brand {
+            display: flex;
+            align-items: center;
+            background: #ffffff;
+            padding: 10px 22px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            text-decoration: none;
+            transition: transform 0.2s ease;
+        }
+
+        .logo-brand:hover {
+            transform: scale(1.02);
+        }
+
+        .logo-brand svg {
+            height: 55px;
+            width: auto;
+            display: block;
+            filter: drop-shadow(0 3px 8px rgba(29, 56, 101, 0.35));
+        }
+
+        .menu-trigger {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--bright-yellow);
+            color: #000;
+            padding: 10px 20px;
+            border-radius: 30px;
+            font-weight: 800;
+            cursor: pointer;
+            border: none;
+            transition: all 0.3s ease;
+            animation: pulseGlow 2.5s ease-in-out infinite;
+        }
+
+        .menu-trigger:hover {
+            transform: scale(1.05);
+            background: #ffffff;
+        }
+
+        /* ============================================================
+           DRAWER MENU (SIDEBAR)
+           ============================================================ */
+        .drawer-menu {
+            position: fixed;
+            top: 0;
+            right: -400px;
+            width: 340px;
+            height: 100vh;
+            background: var(--soft-navy);
+            box-shadow: -10px 0 30px rgba(0,0,0,0.5);
+            z-index: 2000;
+            transition: right 0.4s cubic-bezier(0.77, 0, 0.175, 1);
+            padding: 30px 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border-left: 4px solid var(--bright-yellow);
+            overflow-y: auto;
+        }
+
+        .drawer-menu.active {
+            right: 0;
+        }
+
+        .close-btn {
+            align-self: flex-end;
+            background: transparent;
+            border: none;
+            color: var(--bright-yellow);
+            font-size: 32px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .drawer-logo {
+            background: #ffffff;
+            padding: 10px 15px;
+            border-radius: 8px;
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .drawer-logo svg {
+            height: 45px;
+            width: auto;
+            filter: drop-shadow(0 3px 8px rgba(29, 56, 101, 0.35));
+        }
+
+        .drawer-links {
+            list-style: none;
+            margin-top: 20px;
+        }
+
+        .drawer-links li {
+            margin-bottom: 18px;
+        }
+
+        .drawer-links a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 700;
+            transition: color 0.2s;
+        }
+
+        .drawer-links a:hover {
+            color: var(--bright-yellow);
+        }
+
+        .drawer-contact {
+            background: var(--card-navy);
+            padding: 16px;
+            border-radius: 12px;
+            border: 1px solid rgba(255,230,0,0.2);
+        }
+
+        .drawer-contact h4 {
+            color: var(--bright-yellow);
+            margin-bottom: 10px;
+            font-size: 13px;
+            text-transform: uppercase;
+        }
+
+        .drawer-contact p, .drawer-contact a {
+            color: #cbd5e1;
+            font-size: 13px;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 8px;
+            word-break: break-all;
+        }
+
+        .backdrop {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0,0,0,0.6);
+            z-index: 1500;
+            display: none;
+        }
+
+        .backdrop.active {
+            display: block;
+        }
+
+        /* ============================================================
+           HERO SECTION
+           ============================================================ */
+        .hero {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #141c2b 0%, #1e293b 100%);
+            color: #ffffff;
+            padding-top: 140px;
+            padding-bottom: 60px;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 40px;
+            align-items: center;
+            max-width: 760px;
+        }
+
+
+        /* Slideshow background beranda */
+        .hero-slides { position: absolute; inset: 0; z-index: 0; background: #141c2b; }
+        .hero-slide {
+            position: absolute; inset: 0; width: 100%; height: 100%;
+            object-fit: cover; object-position: center;
+            opacity: 0; transition: opacity 1.5s ease-in-out;
+            filter: brightness(0.75) saturate(0.95);
+        }
+        .hero-slide.active { opacity: 1; }
+        .hero-slides-overlay {
+            position: absolute; inset: 0;
+            background: linear-gradient(90deg, rgba(15,23,42,0.88) 0%, rgba(15,23,42,0.7) 55%, rgba(15,23,42,0.55) 100%);
+        }
+        .hero > .container { position: relative; z-index: 2; }
+        .hero-text h1, .hero-text p { text-shadow: 0 2px 10px rgba(0,0,0,0.5); }
+        @media (max-width: 768px) {
+            .hero-slides-overlay { background: rgba(15,23,42,0.78); }
+        }
+
+        /* ============================================================
+           ANIMASI MASUK BERTAHAP UNTUK KONTEN HERO
+           ============================================================ */
+        .hero-text > * {
+            opacity: 0;
+            transform: translateY(24px);
+            animation: fadeInUp 0.8s ease forwards;
+        }
+
+        .hero-text > .badge-tag { animation-delay: 0.1s; }
+        .hero-text > h1 { animation-delay: 0.25s; }
+        .hero-text > p { animation-delay: 0.4s; }
+        .hero-text > .expertise-tags { animation-delay: 0.55s; }
+
+        .expertise-tags span {
+            background: rgba(255, 230, 0, 0.08);
+            border: 1px solid rgba(255, 230, 0, 0.35);
+            color: #f1f5f9;
+            padding: 7px 16px;
+            border-radius: 30px;
+            font-size: 12.5px;
+            font-weight: 700;
+            letter-spacing: 0.3px;
+            display: inline-block;
+            animation: fadeInUp 0.8s ease forwards;
+            opacity: 0;
+        }
+
+        .expertise-tags span:nth-child(1) { animation-delay: 0.65s; }
+        .expertise-tags span:nth-child(2) { animation-delay: 0.78s; }
+        .expertise-tags span:nth-child(3) { animation-delay: 0.91s; }
+        .expertise-tags span:nth-child(4) { animation-delay: 1.04s; }
+
+        @keyframes dropBounce {
+            0% { opacity: 0; transform: translateY(-45px) scale(0.8); }
+            60% { opacity: 1; transform: translateY(6px) scale(1.05); }
+            80% { transform: translateY(-4px) scale(0.98); }
+            100% { opacity: 1; transform: translateY(0) scale(1); }
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes pulseGlow {
+            0%, 100% { box-shadow: 0 0 15px rgba(255, 230, 0, 0.3); }
+            50% { box-shadow: 0 0 22px rgba(255, 230, 0, 0.7); }
+        }
+
+        .badge-tag {
+            background-color: var(--bright-yellow);
+            color: #000;
+            padding: 6px 18px;
+            border-radius: 30px;
+            font-weight: 900;
+            font-size: 13px;
+            display: inline-block;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+            box-shadow: 0 0 15px rgba(255, 230, 0, 0.4);
+        }
+
+        .hero-text h1 {
+            font-size: 42px;
+            line-height: 1.2;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        .hero-text h1 span {
+            color: var(--bright-yellow);
+        }
+
+        .hero-worker-wave {
+            display: inline-block;
+            font-size: 34px;
+            margin-left: 6px;
+            animation: workerWave 1.6s ease-in-out infinite;
+            transform-origin: 70% 70%;
+        }
+
+        @keyframes workerWave {
+            0%, 100% { transform: translateY(0) rotate(-8deg); }
+            50% { transform: translateY(-8px) rotate(10deg); }
+        }
+
+        .hero-text p {
+            font-size: 17px;
+            color: #cbd5e1;
+            margin-bottom: 30px;
+            max-width: 550px;
+        }
+
+        .expertise-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 32px;
+        }
+
+        .btn-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .btn-main {
+            background-color: var(--bright-yellow);
+            color: #000;
+            padding: 13px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 800;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 230, 0, 0.3);
+            cursor: pointer;
+        }
+
+        .btn-main:hover {
+            transform: translateY(-3px);
+            background: #ffffff;
+        }
+
+        .btn-wa-hero {
+            background-color: var(--whatsapp-green);
+            color: #fff;
+            padding: 13px 22px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-wa-hero:hover {
+            transform: translateY(-3px);
+            background-color: #1eb954;
+        }
+
+        .btn-maps-hero {
+            background-color: var(--maps-red);
+            color: #fff;
+            padding: 13px 22px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .btn-maps-hero:hover {
+            transform: translateY(-3px);
+            background-color: #d93025;
+        }
+
+        .hero-illustration {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .worker-svg {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            filter: drop-shadow(0 15px 25px rgba(0,0,0,0.5));
+            position: relative;
+            z-index: 2;
+        }
+
+        /* ============================================================
+           LOGO PERUSAHAAN MENGAMBANG DI BERANDA (BARU)
+           ============================================================ */
+        .hero-brand-badge {
+            position: absolute;
+            top: 4%;
+            left: 2%;
+            width: 92px;
+            height: 92px;
+            z-index: 3;
+            animation: floatBounce 4s ease-in-out infinite;
+        }
+
+        .hero-brand-badge svg {
+            width: 100%;
+            height: 100%;
+            display: block;
+            filter: drop-shadow(0 8px 16px rgba(0,0,0,0.45));
+        }
+
+        .hero-brand-badge-ring {
+            position: absolute;
+            inset: -10px;
+            border-radius: 50%;
+            border: 2px solid rgba(255, 230, 0, 0.55);
+            animation: badgePulseRing 2.6s ease-out infinite;
+            pointer-events: none;
+        }
+
+        @keyframes badgePulseRing {
+            0% { transform: scale(0.82); opacity: 0.85; }
+            100% { transform: scale(1.4); opacity: 0; }
+        }
+
+        /* Ikon kontraktor yang mengorbit mengelilingi ilustrasi (BARU) */
+        .hero-orbit {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 360px;
+            height: 360px;
+            margin: -180px 0 0 -180px;
+            animation: orbitRotate 15s linear infinite;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .hero-orbit.orbit-reverse {
+            width: 420px;
+            height: 420px;
+            margin: -210px 0 0 -210px;
+            animation: orbitRotate 20s linear infinite reverse;
+        }
+
+        .hero-orbit-icon {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 26px;
+            animation: orbitCounter 15s linear infinite;
+            filter: drop-shadow(0 3px 6px rgba(0,0,0,0.45));
+        }
+
+        .hero-orbit.orbit-reverse .hero-orbit-icon {
+            font-size: 22px;
+            animation: orbitCounter 20s linear infinite reverse;
+        }
+
+        @keyframes orbitRotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        @keyframes orbitCounter {
+            from { transform: translateX(-50%) rotate(0deg); }
+            to { transform: translateX(-50%) rotate(-360deg); }
+        }
+
+        @media (max-width: 900px) {
+            .hero-brand-badge { width: 70px; height: 70px; top: 0; left: 4%; }
+            .hero-orbit { width: 260px; height: 260px; margin: -130px 0 0 -130px; }
+            .hero-orbit.orbit-reverse { width: 310px; height: 310px; margin: -155px 0 0 -155px; }
+        }
+
+        .floating-helmet {
+            animation: floatBounce 3s ease-in-out infinite;
+            transform-origin: center;
+        }
+
+        .crane-arm {
+            animation: swingCrane 4s ease-in-out infinite alternate;
+            transform-origin: bottom left;
+        }
+
+        .pulse-gear {
+            animation: spinGear 12s linear infinite;
+            transform-origin: center;
+        }
+
+        .excavator-arm {
+            animation: digDig 3.5s ease-in-out infinite alternate;
+            transform-origin: 150px 380px;
+        }
+
+        .mixer-drum {
+            animation: spinDrum 2s linear infinite;
+            transform-origin: 380px 360px;
+        }
+
+        @keyframes floatBounce {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-10px) rotate(3deg); }
+        }
+
+        @keyframes swingCrane {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(6deg); }
+        }
+
+        @keyframes spinGear {
+            100% { transform: rotate(360deg); }
+        }
+
+        @keyframes digDig {
+            0% { transform: rotate(0deg); }
+            50% { transform: rotate(-10deg); }
+            100% { transform: rotate(5deg); }
+        }
+
+        @keyframes spinDrum {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* ============================================================
+           TENTANG KAMI
+           ============================================================ */
+        .about-section {
+            padding: 80px 0;
+            padding-top: 140px;
+            min-height: 100vh;
+            background: linear-gradient(180deg, #f8fafc 0%, #eef2f7 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .about-blob {
+            position: absolute;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(255,230,0,0.18) 0%, rgba(255,230,0,0) 70%);
+            filter: blur(10px);
+            pointer-events: none;
+        }
+
+        .about-blob.blob-1 {
+            width: 320px;
+            height: 320px;
+            top: -80px;
+            left: -100px;
+        }
+
+        .about-blob.blob-2 {
+            width: 260px;
+            height: 260px;
+            bottom: -60px;
+            right: -80px;
+            background: radial-gradient(circle, rgba(20,28,43,0.08) 0%, rgba(20,28,43,0) 70%);
+        }
+
+        @keyframes floatBlob {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            50% { transform: translate(30px, -20px) scale(1.08); }
+        }
+
+        .about-content {
+            max-width: 780px;
+            margin: 0 auto 50px auto;
+        }
+
+        .about-content p {
+            color: var(--text-muted);
+            font-size: 15.5px;
+            line-height: 1.8;
+            margin-bottom: 16px;
+        }
+
+        .about-content strong {
+            color: var(--soft-navy);
+        }
+
+        .stats-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .stat-item {
+            background: #ffffff;
+            border-radius: 14px;
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            border-bottom: 4px solid var(--bright-yellow);
+            transition: transform 0.3s ease;
+        }
+
+        .stat-item:hover {
+            transform: translateY(-6px);
+        }
+
+        .stat-number {
+            display: block;
+            font-size: 40px;
+            font-weight: 900;
+            color: var(--soft-navy);
+            line-height: 1;
+            margin-bottom: 10px;
+        }
+
+        .stat-label {
+            display: block;
+            color: var(--text-muted);
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+        /* ============================================================
+           LAYANAN & MAPS SECTION
+           ============================================================ */
+        .services-section {
+            padding: 80px 0;
+            padding-top: 140px;
+            min-height: 100vh;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .section-title h2 {
+            font-size: 32px;
+            color: var(--soft-navy);
+            font-weight: 800;
+        }
+
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+        }
+
+        .service-card {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 28px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            border-top: 5px solid var(--bright-yellow);
+            transition: all 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(255, 230, 0, 0.2);
+        }
+
+        .card-icon {
+            font-size: 38px;
+            margin-bottom: 15px;
+            display: inline-block;
+        }
+
+        .service-card h3 {
+            font-size: 19px;
+            color: var(--soft-navy);
+            margin-bottom: 10px;
+        }
+
+        .service-card p {
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+
+        /* MAPS CONTAINER SECTION */
+        .maps-section {
+            padding: 60px 0 80px 0;
+            padding-top: 140px;
+            background-color: #f1f5f9;
+            min-height: 100vh;
+        }
+
+        .maps-card {
+            background: #ffffff;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            border: 2px solid rgba(255, 230, 0, 0.4);
+        }
+
+        .maps-wrapper {
+            position: relative;
+            width: 100%;
+            height: 420px;
+        }
+
+        .maps-wrapper iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        .maps-info-bar {
+            padding: 20px 25px;
+            background: var(--soft-navy);
+            color: #ffffff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .maps-info-bar p {
+            color: #cbd5e1;
+            font-size: 15px;
+        }
+
+        .maps-info-bar a {
+            background: var(--maps-red);
+            color: #ffffff;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 14px;
+            transition: background 0.2s;
+        }
+
+        .maps-info-bar a:hover {
+            background: #d93025;
+        }
+
+        footer {
+            background: var(--soft-navy);
+            color: #94a3b8;
+            padding: 45px 0 25px 0;
+            border-top: 4px solid var(--bright-yellow);
+            font-size: 14px;
+        }
+
+        footer.page-section {
+            padding-top: 140px;
+            min-height: 100vh;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr;
+            gap: 35px;
+            margin-bottom: 25px;
+        }
+
+        .footer-logo {
+            background: #ffffff;
+            display: inline-block;
+            padding: 8px 18px;
+            border-radius: 8px;
+            margin-bottom: 12px;
+        }
+
+        .footer-logo svg {
+            height: 45px;
+            width: auto;
+            filter: drop-shadow(0 3px 8px rgba(29, 56, 101, 0.35));
+        }
+
+        .footer-contact h4 {
+            color: var(--bright-yellow);
+            margin-bottom: 12px;
+            font-size: 15px;
+        }
+
+        .footer-contact p, .footer-contact a {
+            color: #cbd5e1;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 6px;
+        }
+
+        /* ============================================================
+           FORM KIRIM PESAN (via Email Perusahaan)
+           ============================================================ */
+        .contact-form-card {
+            background: var(--card-navy);
+            border: 1px solid rgba(255, 230, 0, 0.2);
+            border-radius: 12px;
+            padding: 26px 28px;
+            margin-top: 30px;
+            max-width: 560px;
+        }
+
+        .contact-form-card h4 {
+            color: var(--bright-yellow);
+            margin-bottom: 6px;
+            font-size: 16px;
+        }
+
+        .contact-form-card .form-subtitle {
+            color: #94a3b8;
+            font-size: 13px;
+            margin-bottom: 18px;
+        }
+
+        .contact-form-card label {
+            display: block;
+            color: #cbd5e1;
+            font-size: 12.5px;
+            font-weight: 700;
+            margin-bottom: 6px;
+            margin-top: 14px;
+        }
+
+        .contact-form-card input,
+        .contact-form-card textarea {
+            width: 100%;
+            background: var(--soft-navy);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 8px;
+            padding: 11px 14px;
+            color: #ffffff;
+            font-size: 14px;
+            font-family: inherit;
+            transition: border 0.2s ease;
+        }
+
+        .contact-form-card input:focus,
+        .contact-form-card textarea:focus {
+            outline: none;
+            border-color: var(--bright-yellow);
+        }
+
+        .contact-form-card textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .btn-send-email {
+            margin-top: 20px;
+            width: 100%;
+            background-color: var(--bright-yellow);
+            color: #000;
+            padding: 13px 25px;
+            border-radius: 8px;
+            border: none;
+            font-weight: 800;
+            font-size: 14px;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-send-email:hover {
+            transform: translateY(-2px);
+            background: #ffffff;
+            box-shadow: 0 6px 18px rgba(255, 230, 0, 0.35);
+        }
+
+        .form-note {
+            margin-top: 10px;
+            font-size: 11.5px;
+            color: #64748b;
+            text-align: center;
+        }
+
+
+        /* Panel pengelola lokasi (tersembunyi, hanya untuk pemilik) */
+        #adminLokasi { display:none; position:fixed; inset:0; z-index:200000; background:rgba(10,14,22,0.88); align-items:center; justify-content:center; padding:16px; }
+        #adminLokasi.open { display:flex; }
+        .admin-box { background:#fff; border-radius:14px; width:100%; max-width:480px; max-height:92vh; overflow:auto; padding:24px; box-shadow:0 20px 50px rgba(0,0,0,.4); }
+        .admin-box h3 { color:var(--soft-navy); margin-bottom:6px; font-size:18px; }
+        .admin-box p.admin-note { color:var(--text-muted); font-size:12.5px; line-height:1.6; margin-bottom:14px; }
+        .admin-box label { display:block; font-size:12.5px; font-weight:600; color:var(--soft-navy); margin:10px 0 4px; }
+        .admin-box input, .admin-box textarea { width:100%; padding:10px 12px; border:1px solid #cbd5e1; border-radius:8px; font-size:14px; font-family:inherit; }
+        .admin-box textarea { min-height:70px; resize:vertical; }
+        .admin-row { display:flex; gap:8px; flex-wrap:wrap; margin-top:14px; }
+        .admin-btn { padding:10px 16px; border:none; border-radius:8px; font-weight:700; font-size:13px; cursor:pointer; background:var(--bright-yellow); color:var(--soft-navy); }
+        .admin-btn.sec { background:#e2e8f0; }
+        .admin-msg { font-size:12.5px; margin-top:10px; min-height:16px; color:#b91c1c; }
+        .admin-msg.ok { color:#15803d; }
+        .admin-steps { font-size:12.5px; color:var(--text-muted); line-height:1.7; margin-top:12px; padding-left:18px; }
+
+        .admin-menu-btn { display:block; width:100%; text-align:left; padding:14px 16px; margin-top:10px; border:2px solid #e2e8f0; border-radius:10px; background:#fff; font-weight:700; font-size:14px; color:var(--soft-navy); cursor:pointer; font-family:inherit; }
+        .admin-menu-btn:hover { border-color:var(--bright-yellow); }
+        .admin-menu-btn small { display:block; font-weight:400; color:var(--text-muted); font-size:12px; margin-top:3px; }
+        .admin-box select { width:100%; padding:10px 12px; border:1px solid #cbd5e1; border-radius:8px; font-size:14px; font-family:inherit; background:#fff; }
+        .admin-list { margin-top:12px; max-height:180px; overflow:auto; }
+        .admin-item { display:flex; align-items:center; gap:10px; padding:6px 0; border-bottom:1px solid #eef2f7; font-size:12px; }
+        .admin-item img { width:44px; height:44px; object-fit:cover; border-radius:6px; }
+        .admin-item span { flex:1; }
+        .admin-item button { border:none; background:#fee2e2; color:#b91c1c; border-radius:6px; padding:4px 9px; cursor:pointer; font-weight:700; }
+        .copyright {
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 18px;
+            font-size: 12px;
+        }
+
+        /* ============================================================
+           LIGHTBOX (ZOOM FOTO GALERI)
+           ============================================================ */
+        .lightbox-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(10, 14, 22, 0.92);
+            z-index: 100000;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+            cursor: zoom-out;
+            animation: fadeInLightbox 0.25s ease;
+        }
+
+        .lightbox-overlay.active {
+            display: flex;
+        }
+
+        @keyframes fadeInLightbox {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .lightbox-overlay img {
+            max-width: 90vw;
+            max-height: 80vh;
+            border-radius: 10px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+        }
+
+        .lightbox-caption {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #fff;
+            text-align: center;
+            font-size: 14px;
+            background: rgba(0,0,0,0.5);
+            padding: 8px 20px;
+            border-radius: 30px;
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: var(--bright-yellow);
+            font-size: 38px;
+            font-weight: bold;
+            cursor: pointer;
+            line-height: 1;
+        }
+
+        /* ============================================================
+           TOMBOL KEMBALI KE ATAS
+           ============================================================ */
+        .back-to-top {
+            position: fixed;
+            bottom: 90px;
+            right: 20px;
+            width: 46px;
+            height: 46px;
+            background: var(--bright-yellow);
+            color: #000;
+            border: none;
+            border-radius: 50%;
+            font-size: 20px;
+            font-weight: 900;
+            cursor: pointer;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+            z-index: 9998;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.2s ease, background 0.2s ease;
+        }
+
+        .back-to-top.visible {
+            display: flex;
+        }
+
+        .back-to-top:hover {
+            transform: translateY(-4px);
+            background: #ffffff;
+        }
+
+        @media (max-width: 900px) {
+            .hero-grid { grid-template-columns: 1fr; text-align: center; }
+            .hero-text p { margin: 0 auto 25px auto; }
+            .btn-group { justify-content: center; }
+            .hero-text h1 { font-size: 30px; }
+            .footer-grid { grid-template-columns: 1fr; text-align: center; }
+            .maps-info-bar { flex-direction: column; text-align: center; }
+        }
+
+        /* ============================================================
+           GALERI DOKUMENTASI PROYEK (LAYANAN)
+           ============================================================ */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery-card {
+            background: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        .gallery-card.reveal {
+            animation: revealUp 0.7s ease forwards;
+        }
+
+        @keyframes revealUp {
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .gallery-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 15px 30px rgba(255, 230, 0, 0.2);
+        }
+
+        .gallery-card img {
+            width: 100%;
+            height: 190px;
+            object-fit: cover;
+            display: block;
+            cursor: zoom-in;
+        }
+
+        .gallery-caption {
+            padding: 12px 16px;
+            border-top: 3px solid var(--bright-yellow);
+        }
+
+        .gallery-caption strong {
+            display: block;
+            color: var(--soft-navy);
+            font-size: 14px;
+        }
+
+        .gallery-caption span {
+            color: var(--text-muted);
+            font-size: 12px;
+        }
+
+        /* ============================================================
+           HALAMAN PROYEK — CTA di Layanan (baru)
+           ============================================================ */
+        .layanan-proyek-cta {
+            max-width: 640px;
+            margin: -15px auto 45px auto;
+            text-align: center;
+        }
+
+        .layanan-proyek-cta p {
+            color: var(--text-muted);
+            font-size: 14.5px;
+            margin-bottom: 16px;
+        }
+
+        .btn-lihat-proyek {
+            display: inline-block;
+            background: var(--soft-navy);
+            color: #ffffff;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 14px;
+            border-bottom: 3px solid var(--bright-yellow);
+            transition: all 0.25s ease;
+        }
+
+        .btn-lihat-proyek:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
+
+        /* ============================================================
+           HALAMAN PROYEK — Section utama (baru)
+           ============================================================ */
+        .proyek-section {
+            padding: 80px 0;
+            padding-top: 140px;
+            min-height: 100vh;
+            background: linear-gradient(180deg, #f8fafc 0%, #eef2f7 100%);
+        }
+
+        .section-subtitle {
+            color: var(--text-muted);
+            font-size: 14.5px;
+            max-width: 640px;
+            margin: 10px auto 0 auto;
+        }
+
+        .proyek-highlight-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+            margin-bottom: 20px;
+        }
+
+        .proyek-highlight-card {
+            background: #ffffff;
+            border-radius: 14px;
+            padding: 30px 26px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+            border-top: 5px solid var(--soft-navy);
+            transition: all 0.3s ease;
+        }
+
+        .proyek-highlight-card:hover {
+            transform: translateY(-6px);
+            border-top-color: var(--bright-yellow);
+        }
+
+        .proyek-highlight-icon {
+            font-size: 34px;
+            display: inline-block;
+            margin-bottom: 12px;
+        }
+
+        .proyek-highlight-card h3 {
+            font-size: 18px;
+            color: var(--soft-navy);
+            margin-bottom: 6px;
+        }
+
+        .proyek-highlight-loc {
+            color: var(--bright-yellow-hover);
+            background: rgba(255, 230, 0, 0.15);
+            display: inline-block;
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            color: #8a6d00;
+        }
+
+        .proyek-highlight-card p {
+            color: var(--text-muted);
+            font-size: 13.5px;
+            line-height: 1.7;
+            margin-bottom: 18px;
+        }
+
+        .btn-detail-proyek {
+            background: transparent;
+            border: 2px solid var(--soft-navy);
+            color: var(--soft-navy);
+            padding: 9px 18px;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 13px;
+            cursor: pointer;
+            transition: all 0.25s ease;
+        }
+
+        .btn-detail-proyek:hover {
+            background: var(--soft-navy);
+            color: #ffffff;
+        }
+
+        /* TAHAPAN PENGERJAAN (proses) */
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+        }
+
+        .process-step {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 26px 18px;
+            text-align: center;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+            position: relative;
+        }
+
+        .process-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            background: var(--bright-yellow);
+            color: var(--soft-navy);
+            font-weight: 900;
+            font-size: 15px;
+            margin-bottom: 12px;
+        }
+
+        .process-step h4 {
+            font-size: 14.5px;
+            color: var(--soft-navy);
+            margin-bottom: 8px;
+        }
+
+        .process-step p {
+            font-size: 12.5px;
+            color: var(--text-muted);
+            line-height: 1.6;
+        }
+
+        /* FILTER TABS (baru) */
+        .filter-tabs {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+            margin: 0 auto 35px auto;
+        }
+
+        .filter-tab {
+            background: #ffffff;
+            border: 2px solid #e2e8f0;
+            color: var(--text-dark);
+            padding: 10px 22px;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 13.5px;
+            cursor: pointer;
+            transition: all 0.25s ease;
+        }
+
+        .filter-tab:hover {
+            border-color: var(--bright-yellow);
+        }
+
+        .filter-tab.active {
+            background: var(--soft-navy);
+            border-color: var(--soft-navy);
+            color: #ffffff;
+        }
+
+        .gallery-card.filtered-out {
+            display: none !important;
+        }
+
+        /* ============================================================
+           STRUKTUR ORGANISASI (baru)
+           ============================================================ */
+        .org-chart {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .org-line-vertical {
+            width: 2px;
+            height: 30px;
+            background: rgba(20, 28, 43, 0.25);
+        }
+
+        .org-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+            gap: 20px;
+            width: 100%;
+            margin-bottom: 0;
+        }
+
+        .org-box {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 20px 18px;
+            text-align: center;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+            border: 2px solid rgba(255, 230, 0, 0.35);
+        }
+
+        .org-box.org-top, .org-box.org-bottom {
+            max-width: 300px;
+        }
+
+        .org-icon {
+            font-size: 26px;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .org-box strong {
+            display: block;
+            color: var(--soft-navy);
+            font-size: 14.5px;
+            margin-bottom: 6px;
+        }
+
+        .org-box span {
+            display: block;
+            color: var(--text-muted);
+            font-size: 12px;
+            line-height: 1.5;
+        }
+
+        /* FORM 2-KOLOM (Nama/Email, Telepon/Subjek) */
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        @media (max-width: 640px) {
+            .form-row {
+                grid-template-columns: 1fr;
+                gap: 0;
+            }
+            .org-row {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* ============================================================
+           VISI & MISI (baru)
+           ============================================================ */
+        .visi-misi-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.3fr;
+            gap: 25px;
+            max-width: 950px;
+            margin: 0 auto;
+        }
+
+        .visi-card, .misi-card {
+            background: #ffffff;
+            border-radius: 14px;
+            padding: 28px 26px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+        }
+
+        .visi-misi-icon {
+            font-size: 30px;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .visi-card h3, .misi-card h3 {
+            color: var(--soft-navy);
+            font-size: 19px;
+            margin-bottom: 12px;
+        }
+
+        .visi-card p {
+            color: var(--text-muted);
+            font-size: 14px;
+            line-height: 1.8;
+        }
+
+        .misi-list {
+            margin: 0;
+            padding-left: 20px;
+            color: var(--text-muted);
+            font-size: 13.5px;
+            line-height: 1.85;
+        }
+
+        .misi-list li {
+            margin-bottom: 8px;
+        }
+
+        @media (max-width: 720px) {
+            .visi-misi-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Link profil eksternal - tampil sebagai teks biasa, bukan link mencolok */
+        .inline-profile-link {
+            color: inherit;
+            text-decoration: underline;
+            text-decoration-color: rgba(20, 28, 43, 0.35);
+            text-underline-offset: 3px;
+            font-weight: 600;
+            transition: color 0.2s ease;
+        }
+
+        .inline-profile-link:hover {
+            color: var(--soft-navy);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- SPLASH SCREEN INTRO -->
+    <div id="splash-screen">
+        <div class="splash-ring"></div>
+        <div class="splash-logo-wrapper">
+            <div class="splash-logo-container">
+                <svg viewBox="0 0 540 145" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="ptaBadgeGradSplash" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#284b81"/>
+                            <stop offset="100%" stop-color="#131f34"/>
+                        </linearGradient>
+                        <linearGradient id="ptaArcGradSplash" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" stop-color="#FFE600"/>
+                            <stop offset="100%" stop-color="#e30613"/>
+                        </linearGradient>
+                    </defs>
+                    <path d="M 20 60 A 45 45 0 0 1 110 60 L 98 60 A 33 33 0 0 0 32 60 Z" fill="url(#ptaBadgeGradSplash)"/>
+                    <path d="M 32 60 A 33 33 0 0 1 98 60 L 86 60 A 21 21 0 0 0 44 60 Z" fill="url(#ptaBadgeGradSplash)"/>
+                    <path d="M 44 60 A 21 21 0 0 1 86 60 Z" fill="#e30613"/>
+                    <rect x="16" y="61" width="98" height="44" rx="10" fill="url(#ptaBadgeGradSplash)"/>
+                    <text x="24" y="93" font-family="'Segoe UI Black', Arial, sans-serif" font-weight="900" font-size="30" fill="#ffffff" letter-spacing="1">PTA</text>
+                    <rect x="16" y="108" width="98" height="5" rx="2.5" fill="#FFE600"/>
+                    <text x="135" y="65" font-family="'Segoe UI Black', Arial, sans-serif" font-weight="900" font-size="38" fill="#050505">PERINTIS</text>
+                    <text x="135" y="105" font-family="'Segoe UI Black', Arial, sans-serif" font-weight="900" font-size="28" fill="#050505">TRANSMISI ASIA</text>
+                    <path class="animated-arc" d="M 215 32 C 320 10, 420 28, 440 52" stroke="url(#ptaArcGradSplash)" stroke-width="3" fill="none" stroke-linecap="round"/>
+                    <path class="animated-arc" d="M 200 44 C 290 15, 435 25, 455 60" stroke="#7b91b0" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                    <circle cx="450" cy="55" r="4" fill="#e30613"/>
+                </svg>
+            </div>
+            <div class="splash-loader-bar">
+                <div class="splash-progress"></div>
+            </div>
+            <div class="splash-text" id="splashStatus">Memuat Sistem...</div>
+        </div>
+    </div>
+
+    <!-- BACKDROP & MENU -->
+    <div class="backdrop" id="backdrop" onclick="toggleMenu()"></div>
+
+    <header>
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="#beranda" class="logo-brand" onclick="showPage('beranda'); return false;">
+                    <svg viewBox="0 0 540 145" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="ptaBadgeGradHeader" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#284b81"/>
+                                <stop offset="100%" stop-color="#131f34"/>
+                            </linearGradient>
+                            <linearGradient id="ptaArcGradHeader" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" stop-color="#FFE600"/>
+                                <stop offset="100%" stop-color="#e30613"/>
+                            </linearGradient>
+                        </defs>
+                        <path d="M 20 60 A 45 45 0 0 1 110 60 L 98 60 A 33 33 0 0 0 32 60 Z" fill="url(#ptaBadgeGradHeader)"/>
+                        <path d="M 32 60 A 33 33 0 0 1 98 60 L 86 60 A 21 21 0 0 0 44 60 Z" fill="url(#ptaBadgeGradHeader)"/>
+                        <path d="M 44 60 A 21 21 0 0 1 86 60 Z" fill="#e30613"/>
+                        <rect x="16" y="61" width="98" height="44" rx="10" fill="url(#ptaBadgeGradHeader)"/>
+                        <text x="24" y="93" font-family="'Segoe UI Black', Arial, sans-serif" font-weight="900" font-size="30" fill="#ffffff" letter-spacing="1">PTA</text>
+                        <rect x="16" y="108" width="98" height="5" rx="2.5" fill="#FFE600"/>
+                        <text x="135" y="65" font-family="'Segoe UI Black', sans-serif" font-weight="900" font-size="38" fill="#050505">PERINTIS</text>
+                        <text x="135" y="105" font-family="'Segoe UI Black', sans-serif" font-weight="900" font-size="28" fill="#050505">TRANSMISI ASIA</text>
+                        <path d="M 215 32 C 320 10, 420 28, 440 52" stroke="url(#ptaArcGradHeader)" stroke-width="3" fill="none" stroke-linecap="round"/>
+                        <path d="M 200 44 C 290 15, 435 25, 455 60" stroke="#7b91b0" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                        <circle cx="450" cy="55" r="4" fill="#e30613"/>
+                    </svg>
+                </a>
+                <button class="menu-trigger" onclick="toggleMenu()">
+                    <span>MENU</span> ☰
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- DRAWER SIDEBAR -->
+    <div class="drawer-menu" id="drawerMenu">
+        <button class="close-btn" onclick="toggleMenu()">&times;</button>
+        <div class="drawer-logo">
+            <svg viewBox="0 0 540 145" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="ptaBadgeGradDrawer" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" stop-color="#284b81"/>
+                        <stop offset="100%" stop-color="#131f34"/>
+                    </linearGradient>
+                </defs>
+                <path d="M 20 60 A 45 45 0 0 1 110 60 L 98 60 A 33 33 0 0 0 32 60 Z" fill="url(#ptaBadgeGradDrawer)"/>
+                <path d="M 32 60 A 33 33 0 0 1 98 60 L 86 60 A 21 21 0 0 0 44 60 Z" fill="url(#ptaBadgeGradDrawer)"/>
+                <path d="M 44 60 A 21 21 0 0 1 86 60 Z" fill="#e30613"/>
+                <rect x="16" y="61" width="98" height="44" rx="10" fill="url(#ptaBadgeGradDrawer)"/>
+                <text x="24" y="93" font-family="'Segoe UI Black', Arial, sans-serif" font-weight="900" font-size="30" fill="#ffffff" letter-spacing="1">PTA</text>
+                <rect x="16" y="108" width="98" height="5" rx="2.5" fill="#FFE600"/>
+                <text x="135" y="65" font-family="'Segoe UI Black', sans-serif" font-weight="900" font-size="38" fill="#050505">PERINTIS</text>
+                <text x="135" y="105" font-family="'Segoe UI Black', sans-serif" font-weight="900" font-size="28" fill="#050505">TRANSMISI ASIA</text>
+            </svg>
+        </div>
+        <ul class="drawer-links">
+            <li><a href="#beranda" onclick="showPage('beranda'); toggleMenu(); return false;">Beranda</a></li>
+            <li><a href="#tentang" onclick="showPage('tentang'); toggleMenu(); return false;">Tentang Kami</a></li>
+            <li><a href="#layanan" onclick="showPage('layanan'); toggleMenu(); return false;">Layanan Kontraktor</a></li>
+            <li><a href="#proyek" onclick="showPage('proyek'); toggleMenu(); return false;">Proyek</a></li>
+            <li><a href="#lokasi-peta" onclick="showPage('lokasi-peta'); toggleMenu(); return false;">Lokasi Kantor</a></li>
+            <li><a href="#kontak" onclick="showPage('kontak'); toggleMenu(); return false;">Hubungi Kami</a></li>
+        </ul>
+        <div class="drawer-contact">
+            <h4>Kontak Perusahaan</h4>
+            <a href="mailto:perintistransmisi@gmail.com">✉️ perintistransmisi@gmail.com</a>
+            <a href="mailto:mirandaciian04@gmail.com">✉️ mirandaciian04@gmail.com</a>
+            <a href="https://wa.me/6282195231177?text=Halo%20PT%20PERINTIS%20TRANSMISI%20ASIA,%20saya%20ingin%20konsultasi%20proyek." target="_blank">📞 +62 821-9523-1177</a>
+            <a href="https://wa.me/6281360345385?text=Halo%20PT%20PERINTIS%20TRANSMISI%20ASIA,%20saya%20ingin%20konsultasi%20proyek." target="_blank">📞 +62 813-6034-5385</a>
+            <a href="#lokasi-peta" onclick="showPage('lokasi-peta'); toggleMenu(); return false;">📍 Lokasi Peta Kantor</a>
+        </div>
+    </div>
+
+    <!-- HERO SECTION (tampilan pembukaan / halaman utama) -->
+    <section class="hero page-section active" id="beranda">
+                <div class="hero-slides" aria-hidden="true">
+                    <img class="hero-slide active" style="object-position: center 22%;" src="foto/hero-1.webp" srcset="foto/hero-1-800.webp 800w, foto/hero-1.webp 1400w" sizes="(max-width: 768px) 260px, 100vw" fetchpriority="high" decoding="async" alt="">
+                    <img class="hero-slide" style="object-position: center 18%;" data-src="foto/hero-2.webp" data-srcset="foto/hero-2-800.webp 800w, foto/hero-2.webp 1400w" sizes="(max-width: 768px) 260px, 100vw" decoding="async" alt="">
+                    <img class="hero-slide" style="object-position: center 30%;" data-src="foto/hero-3.webp" data-srcset="foto/hero-3-800.webp 800w, foto/hero-3.webp 1400w" sizes="(max-width: 768px) 260px, 100vw" decoding="async" alt="">
+                    <img class="hero-slide" style="object-position: center 38%;" data-src="foto/hero-4.webp" data-srcset="foto/hero-4-800.webp 800w, foto/hero-4.webp 1400w" sizes="(max-width: 768px) 260px, 100vw" decoding="async" alt="">
+                    <img class="hero-slide" style="object-position: center 28%;" data-src="foto/hero-5.webp" data-srcset="foto/hero-5-800.webp 800w, foto/hero-5.webp 1400w" sizes="(max-width: 768px) 260px, 100vw" decoding="async" alt="">
+                    <img class="hero-slide" style="object-position: center 32%;" data-src="foto/hero-6.webp" data-srcset="foto/hero-6-800.webp 800w, foto/hero-6.webp 1400w" sizes="(max-width: 768px) 260px, 100vw" decoding="async" alt="">
+                    <img class="hero-slide" style="object-position: center 55%;" data-src="foto/hero-7.webp" data-srcset="foto/hero-7-800.webp 800w, foto/hero-7.webp 1400w" sizes="(max-width: 768px) 260px, 100vw" decoding="async" alt="">
+                    <div class="hero-slides-overlay"></div>
+                </div>
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-text">
+                    <span class="badge-tag">PT PERINTIS TRANSMISI ASIA</span>
+                    <h1>Solusi Rekayasa & <span>Kontraktor Konstruksi</span> Terpercaya</h1>
+                    <p>Kami adalah mitra profesional dalam perencanaan, rekayasa teknik sipil, dan pembangunan infrastruktur industri dengan mutu terjamin.</p>
+                    <div class="expertise-tags">
+                        <span>🏗️ Konstruksi Sipil & Bangunan</span>
+                        <span>⚡ Sistem Transmisi & Listrik</span>
+                        <span>📐 Perencanaan & Perancangan</span>
+                        <span>🛠️ Manajemen Proyek</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TENTANG KAMI (baru muncul saat dipilih dari menu) -->
+    <section class="about-section page-section" id="tentang">
+        <div class="about-blob blob-1"></div>
+        <div class="about-blob blob-2"></div>
+        <div class="container">
+            <div class="section-title">
+                <h2>Tentang Perusahaan</h2>
+            </div>
+            <div class="about-content">
+                <p><strong>PT Perintis Transmisi Asia</strong> adalah perusahaan rekayasa dan kontraktor yang bergerak di bidang konstruksi sipil, sistem transmisi listrik, serta pembangunan infrastruktur industri di Indonesia. Kami menangani proyek mulai dari tahap perencanaan, perancangan teknik, pelaksanaan konstruksi, hingga manajemen proyek — dengan menjunjung tinggi standar mutu dan Keselamatan & Kesehatan Kerja (K3) di setiap tahapan pekerjaan.</p>
+                <p>Pengalaman kami mencakup pembangunan fasilitas Rest Area di jalan tol Trans Sumatera (termasuk bangunan utama, masjid, toilet, dan area parkir kendaraan), hingga pekerjaan relokasi Saluran Udara Tegangan Tinggi (SUTT) 150 kV. Setiap proyek kami dokumentasikan secara berkala sebagai bentuk transparansi dan komitmen terhadap kualitas hasil kerja.</p>
+                <p><strong>PT Perintis Transmisi Asia</strong> merupakan perusahaan penyedia jasa konstruksi terkemuka yang berdomisili di Kota Medan, Sumatera Utara, dan terdaftar resmi sebagai anggota Asosiasi Kontraktor Indonesia (ASPEKNAS). Sebagai badan usaha yang bergerak di bidang pelaksana konstruksi, kami berfokus pada pengerjaan proyek-proyek vital pendukung infrastruktur dan pembangunan daerah dengan kualifikasi badan usaha menengah (Grade M1). Dedikasi kami diwujudkan melalui komitmen tinggi terhadap standar mutu, legalitas, serta penerapan keselamatan kerja untuk memastikan setiap proyek yang dipercayakan dapat terlaksana secara tepat waktu dan berkualitas tinggi.</p>
+                <p>Fokus keahlian utama kami mencakup pekerjaan konstruksi prasarana sumber daya air, seperti pembangunan dan pemeliharaan bendungan, pintu air, tanggul pengendali banjir, hingga sistem drainase perkotaan (SI001). Selain sektor sipil basah, PT Perintis Transmisi Asia juga memiliki rekam jejak kualifikasi dalam pembangunan berbagai jenis gedung komersial seperti pusat perbelanjaan dan pasar (BG004), serta gedung-gedung sarana publik dan fasilitas instansi lainnya (BG009). Dengan kapabilitas teknis yang solid dan profesionalisme kerja, kami terus siap berkolaborasi sebagai mitra terpercaya bagi pemerintah maupun swasta dalam mendukung percepatan pembangunan nasional.</p>
+                <p>Rekam jejak dan legalitas usaha kami turut tercatat pada direktori kontraktor nasional. <a href="https://indokontraktor.com/business/pt-perintis-transmisi-asia-kota-medan#g-overview" target="_blank" rel="noopener" class="inline-profile-link">Lihat profil resmi PT Perintis Transmisi Asia di IndoKontraktor</a>.</p>
+            </div>
+
+            <!-- VISI & MISI (baru) -->
+            <div class="section-title" style="margin-top:60px;">
+                <h2>Visi & Misi</h2>
+            </div>
+            <div class="visi-misi-grid">
+                <div class="visi-card">
+                    <span class="visi-misi-icon">🦅</span>
+                    <h3>Visi</h3>
+                    <p>Menjadi mitra terpercaya dalam pembangunan infrastruktur nasional yang berdaya saing tinggi dan berstandar profesional.</p>
+                </div>
+                <div class="misi-card">
+                    <span class="visi-misi-icon">⚒️</span>
+                    <h3>Misi</h3>
+                    <ul class="misi-list">
+                        <li>Melaksanakan proyek-proyek konstruksi gedung, saluran air, dan sarana sipil secara tepat mutu dan tepat waktu.</li>
+                        <li>Membangun hubungan kerja sama yang solid dengan asosiasi, instansi pemerintah, dan masyarakat.</li>
+                        <li>Menerapkan manajemen perusahaan yang adaptif terhadap perkembangan teknologi dan kebutuhan industri konstruksi.</li>
+                        <li>Mengutamakan kepuasan klien melalui hasil pengerjaan fisik yang kokoh dan berkualitas.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="stats-row">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="4">0</span>
+                    <span class="stat-label">Bidang Keahlian</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="5">0</span>
+                    <span class="stat-label">Lokasi Proyek Terdokumentasi</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="58">0</span>
+                    <span class="stat-label">Foto Dokumentasi Proyek</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="100">0</span>
+                    <span class="stat-label">% Fokus Mutu & K3</span>
+                </div>
+            </div>
+
+            <!-- STRUKTUR ORGANISASI (baru) -->
+            <div class="section-title" style="margin-top:70px;">
+                <h2>Struktur Organisasi</h2>
+                <p class="section-subtitle">Susunan fungsi kerja yang menjalankan setiap proyek PT Perintis Transmisi Asia.</p>
+            </div>
+            <div class="org-chart">
+                <div class="org-box org-top">
+                    <span class="org-icon">🧑‍💼</span>
+                    <strong>Direktur Utama</strong>
+                    <span>Pengambil kebijakan & penanggung jawab perusahaan</span>
+                </div>
+                <div class="org-line-vertical"></div>
+                <div class="org-row">
+                    <div class="org-box">
+                        <span class="org-icon">📐</span>
+                        <strong>Tim Perencanaan & Teknik</strong>
+                        <span>Perancangan, RAB, dan gambar kerja</span>
+                    </div>
+                    <div class="org-box">
+                        <span class="org-icon">🛠️</span>
+                        <strong>Manajer Proyek</strong>
+                        <span>Koordinasi pelaksanaan proyek di lapangan</span>
+                    </div>
+                    <div class="org-box">
+                        <span class="org-icon">✅</span>
+                        <strong>Tim Mutu & K3</strong>
+                        <span>Pengendalian kualitas dan keselamatan kerja</span>
+                    </div>
+                </div>
+                <div class="org-line-vertical"></div>
+                <div class="org-box org-bottom">
+                    <span class="org-icon">👷</span>
+                    <strong>Tim Pelaksana Lapangan</strong>
+                    <span>Konstruksi sipil, bangunan & instalasi transmisi listrik</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LAYANAN SECTION (baru muncul saat dipilih dari menu) -->
+    <section class="services-section page-section" id="layanan">
+        <div class="container">
+            <div class="section-title">
+                <h2>Layanan Keahlian Kami</h2>
+            </div>
+            <div class="section-title" style="margin-top:20px;">
+                <h2>Dokumentasi Proyek</h2>
+            </div>
+            <div class="layanan-proyek-cta">
+                <p>Kami mendokumentasikan setiap tahap pekerjaan sebagai bentuk transparansi mutu dan K3. Lihat galeri foto lengkap beserta filter kategori proyek di halaman Proyek.</p>
+                <a href="#proyek" class="btn-lihat-proyek" onclick="showPage('proyek'); return false;">📁 Lihat Semua Dokumentasi Proyek →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- HALAMAN PROYEK (baru, berisi filter proyek & dokumentasi foto) -->
+    <section class="proyek-section page-section" id="proyek">
+        <div class="container">
+            <div class="section-title">
+                <h2>Proyek Kami</h2>
+                <p class="section-subtitle">Rekam jejak pekerjaan konstruksi sipil, bangunan, dan sistem transmisi listrik yang telah kami tangani di berbagai lokasi.</p>
+            </div>
+
+            <!-- PROYEK UNGGULAN (ringkasan 3 proyek utama) -->
+            <div class="proyek-highlight-grid">
+                <div class="proyek-highlight-card">
+                    <span class="proyek-highlight-icon">🏢</span>
+                    <h3>Rest Area KM 10+550</h3>
+                    <p class="proyek-highlight-loc">📍 Jalan Tol Trans Sumatera</p>
+                    <p>Pembangunan bangunan utama, masjid, toilet, dan area parkir kendaraan golongan II–IV pada Rest Area Sisi A & Sisi B.</p>
+                    <button class="btn-detail-proyek" onclick="showPage('layanan'); return false;">Lihat Dokumentasi</button>
+                </div>
+                <div class="proyek-highlight-card">
+                    <span class="proyek-highlight-icon">⚡</span>
+                    <h3>Relokasi SUTT 150 kV</h3>
+                    <p class="proyek-highlight-loc">📍 Tower 12 & 13, Kab. Langkat</p>
+                    <p>Pekerjaan relokasi Saluran Udara Tegangan Tinggi (SUTT) 150 kV, termasuk pemasangan tower dan pengamanan jalur transmisi.</p>
+                    <button class="btn-detail-proyek" onclick="showPage('layanan'); return false;">Lihat Dokumentasi</button>
+                </div>
+                <div class="proyek-highlight-card">
+                    <span class="proyek-highlight-icon">🛣️</span>
+                    <h3>Rest Area Medan–Binjai</h3>
+                    <p class="proyek-highlight-loc">📍 Tanjung Gusta, Medan</p>
+                    <p>Pembangunan dan pengecatan bangunan utama Rest Area di ruas Tol Medan–Binjai oleh tim lapangan PTA.</p>
+                    <button class="btn-detail-proyek" onclick="showPage('layanan'); return false;">Lihat Dokumentasi</button>
+                </div>
+                <div class="proyek-highlight-card">
+                    <span class="proyek-highlight-icon">🕌</span>
+                    <h3>Pasca-Bencana Peribadatan</h3>
+                    <p class="proyek-highlight-loc">📍 Mesjid Al-Ikhlas Cengkeh, Jl. Bawang Raya II No. 60-76, Medan</p>
+                    <p>Renovasi struktur pasca bencana pada Mesjid Al-Ikhlas Cengkeh, mulai dari persiapan material dan scaffolding hingga perbaikan dinding dan menara masjid.</p>
+                    <button class="btn-detail-proyek" onclick="filterGallery('peribadatan'); document.querySelectorAll('.filter-tab').forEach(t=>t.classList.remove('active')); document.querySelector('[data-filter=\'peribadatan\']').classList.add('active'); return false;">Lihat Dokumentasi</button>
+                </div>
+            </div>
+
+            <!-- TAHAPAN PENGERJAAN PROYEK -->
+            <div class="section-title" style="margin-top:55px;">
+                <h2>Tahapan Pengerjaan Kami</h2>
+            </div>
+            <div class="process-steps">
+                <div class="process-step">
+                    <span class="process-number">1</span>
+                    <h4>Konsultasi & Survey</h4>
+                    <p>Diskusi kebutuhan proyek dan survey lokasi untuk memastikan solusi yang tepat.</p>
+                </div>
+                <div class="process-step">
+                    <span class="process-number">2</span>
+                    <h4>Perencanaan & Desain</h4>
+                    <p>Penyusunan rencana teknis, gambar kerja, dan estimasi biaya proyek.</p>
+                </div>
+                <div class="process-step">
+                    <span class="process-number">3</span>
+                    <h4>Pelaksanaan Konstruksi</h4>
+                    <p>Eksekusi pekerjaan di lapangan dengan pengawasan mutu secara berkala.</p>
+                </div>
+                <div class="process-step">
+                    <span class="process-number">4</span>
+                    <h4>Quality Control & K3</h4>
+                    <p>Pemeriksaan mutu hasil kerja serta penerapan Keselamatan & Kesehatan Kerja.</p>
+                </div>
+                <div class="process-step">
+                    <span class="process-number">5</span>
+                    <h4>Serah Terima</h4>
+                    <p>Dokumentasi akhir dan serah terima proyek kepada pemberi kerja.</p>
+                </div>
+            </div>
+
+            <!-- FILTER & GALERI DOKUMENTASI PROYEK -->
+            <div class="section-title" style="margin-top:55px;">
+                <h2>Dokumentasi Proyek</h2>
+            </div>
+            <div class="filter-tabs">
+                <button class="filter-tab active" data-filter="semua" onclick="filterGallery('semua', this)">Semua</button>
+                <button class="filter-tab" data-filter="restarea" onclick="filterGallery('restarea', this)">Rest Area</button>
+                <button class="filter-tab" data-filter="sutt" onclick="filterGallery('sutt', this)">Transmisi Listrik (SUTT)</button>
+                <button class="filter-tab" data-filter="peribadatan" onclick="filterGallery('peribadatan', this)">Pasca-Bencana Peribadatan</button>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-card" data-category="restarea">
+                    <img loading="lazy" decoding="async" src="foto/t/proyek-001.webp" data-full="foto/proyek-001.webp" width="520" height="294" alt="Toilet Pria & Wanita - Rest Area KM 10+550 Sisi A">
+                    <div class="gallery-caption">
+                        <strong>Toilet Pria & Wanita</strong>
+                        <span>Rest Area KM 10+550 Sisi A</span>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="restarea">
+                    <img loading="lazy" decoding="async" src="foto/t/proyek-002.webp" data-full="foto/proyek-002.webp" width="520" height="294" alt="Masjid - Rest Area KM 10+550 Sisi A">
+                    <div class="gallery-caption">
+                        <strong>Masjid</strong>
+                        <span>Rest Area KM 10+550 Sisi A</span>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="restarea">
+                    <img loading="lazy" decoding="async" src="foto/t/proyek-003.webp" data-full="foto/proyek-003.webp" width="520" height="294" alt="Parkir Kendaraan Gol. II–IV - Rest Area KM 10+550 Sisi A">
+                    <div class="gallery-caption">
+                        <strong>Parkir Kendaraan Gol. II–IV</strong>
+                        <span>Rest Area KM 10+550 Sisi A</span>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="restarea">
+                    <img loading="lazy" decoding="async" src="foto/t/proyek-004.webp" data-full="foto/proyek-004.webp" width="520" height="294" alt="Masjid - Rest Area KM 10+550 Sisi A">
+                    <div class="gallery-caption">
+                        <strong>Masjid</strong>
+                        <span>Rest Area KM 10+550 Sisi A</span>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="restarea">
+                    <img loading="lazy" decoding="async" src="foto/t/proyek-005.webp" data-full="foto/proyek-005.webp" width="520" height="294" alt="Parkir Kendaraan Gol. II–IV - Rest Area KM 10+550 Sisi A">
+                    <div class="gallery-caption">
+                        <strong>Parkir Kendaraan Gol. II–IV</strong>
+                        <span>Rest Area KM 10+550 Sisi A</span>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="restarea">
+                    <img loading="lazy" decoding="async" src="foto/t/proyek-006.webp" data-full="foto/proyek-006.webp" width="520" height="294" alt="Bangunan Utama - Rest Area KM 10+550 Sisi A">
+                    <div class="gallery-caption">
+                        <strong>Bangunan Utama</strong>
+                        <span>Rest Area KM 10+550 Sisi A</span>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="restarea">
+                    <img loading="lazy" decoding="async" src="foto/t/proyek-007.webp" data-full="foto/proyek-007.webp" width="520" height="294" alt="Toilet Pria & Wanita - Rest Area KM 10+550 Sisi A">
+                    <div class="gallery-caption">
+                        <strong>Toilet Pria & Wanita</strong>
+                        <span>Rest Area KM 10+550 Sisi A</span>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="sutt">
+                    <img loading="lazy" decoding="async" src="foto/t/proyek-008.webp" data-full="foto/proyek-008.webp" width="520" height="693" alt="Relokasi SUTT 150 kV - Tower 12, STA 1+775, Kab. Langkat">
+                    <div class="gallery-caption">
+                        <strong>Relokasi SUTT 150 kV</strong>
+                        <span>Tower 12, STA 1+775, Kab. Langkat</span>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="sutt">
+                    <img loading="lazy" decoding="async" src="foto/t/proyek-009.webp" data-full="foto/proyek-009.webp" width="520" height="693" alt="Pemasangan Tower Transmisi - Kab. Langkat">
+                    <div class="gallery-caption">
+                        <strong>Pemasangan Tower Transmisi</strong>
+                        <span>Kab. Langkat</span>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="sutt">
+                    <img loading="lazy" decoding="async" src="foto/t/proyek-010.webp" data-full="foto/proyek-010.webp" width="520" height="693" alt="Pemindahan Kabel Tower - Tower 12, Kab. Langkat">
+                    <div class="gallery-caption">
+                        <strong>Pemindahan Kabel Tower</strong>
+                        <span>Tower 12, Kab. Langkat</span>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="sutt">
+                    <img loading="lazy" decoding="async" src="foto/t/proyek-011.webp" data-full="foto/proyek-011.webp" width="520" height="693" alt="Bongkar Tower Emergency - Tower 12, Kab. Langkat">
+                    <div class="gallery-caption">
+                        <strong>Bongkar Tower Emergency</strong>
+                        <span>Tower 12, Kab. Langkat</span>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="sutt">
+                    <img loading="lazy" decoding="async" src="foto/t/proyek-012.webp" data-full="foto/proyek-012.webp" width="520" height="693" alt="Instalasi Kabel GSW - Tower 13, Kab. Langkat">
+                    <div class="gallery-caption">
+                        <strong>Instalasi Kabel GSW</strong>
+                        <span>Tower 13, Kab. Langkat</span>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="sutt">
+                    <img loading="lazy" decoding="async" src="foto/t/proyek-013.webp" data-full="foto/proyek-013.webp" width="520" height="693" alt="Instalasi Kabel GSW - Tower 12, Kab. Langkat">
+                    <div class="gallery-caption">
+                        <strong>Instalasi Kabel GSW</strong>
+                        <span>Tower 12, Kab. Langkat</span>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="sutt">
+                    <img loading="lazy" decoding="async" src="foto/t/proyek-014.webp" data-full="foto/proyek-014.webp" width="520" height="693" alt="Bongkar Tower Emergency - Tower 12, Kab. Langkat">
+                    <div class="gallery-caption">
+                        <strong>Bongkar Tower Emergency</strong>
+                        <span>Tower 12, Kab. Langkat</span>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="restarea">
+                    <img loading="lazy" decoding="async" src="foto/t/proyek-015.webp" data-full="foto/proyek-015.webp" width="520" height="295" alt="Masjid - Rest Area KM 10+550 Sisi A">
+                    <div class="gallery-caption">
+                        <strong>Masjid</strong>
+                        <span>Rest Area KM 10+550 Sisi A</span>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="restarea">
+                    <img loading="lazy" decoding="async" src="foto/t/proyek-016.webp" data-full="foto/proyek-016.webp" width="520" height="295" alt="Fasilitas Kendaraan Besar - Rest Area KM 10+550 Sisi A">
+                    <div class="gallery-caption">
+                        <strong>Fasilitas Kendaraan Besar</strong>
+                        <span>Rest Area KM 10+550 Sisi A</span>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="restarea">
+                    <img loading="lazy" decoding="async" src="foto/t/proyek-017.webp" data-full="foto/proyek-017.webp" width="520" height="295" alt="Bangunan Utama - Rest Area KM 10+550 Sisi A">
+                    <div class="gallery-caption">
+                        <strong>Bangunan Utama</strong>
+                        <span>Rest Area KM 10+550 Sisi A</span>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="restarea">
+                    <img loading="lazy" decoding="async" src="foto/t/proyek-018.webp" data-full="foto/proyek-018.webp" width="520" height="295" alt="Bangunan Utama - Rest Area KM 10+550 Sisi A">
+                    <div class="gallery-caption">
+                        <strong>Bangunan Utama</strong>
+                        <span>Rest Area KM 10+550 Sisi A</span>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="restarea">
+                    <img loading="lazy" decoding="async" src="foto/t/proyek-019.webp" data-full="foto/proyek-019.webp" width="520" height="295" alt="Masjid - Rest Area KM 10+550 Sisi A">
+                    <div class="gallery-caption">
+                        <strong>Masjid</strong>
+                        <span>Rest Area KM 10+550 Sisi A</span>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="restarea">
+                    <img loading="lazy" decoding="async" src="foto/t/proyek-020.webp" data-full="foto/proyek-020.webp" width="520" height="295" alt="Toilet Pria & Wanita - Rest Area KM 10+550 Sisi A">
+                    <div class="gallery-caption">
+                        <strong>Toilet Pria & Wanita</strong>
+                        <span>Rest Area KM 10+550 Sisi A</span>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="restarea">
+                    <img loading="lazy" decoding="async" src="foto/t/proyek-021.webp" data-full="foto/proyek-021.webp" width="520" height="295" alt="Toilet Pria & Wanita - Rest Area KM 10+550 Sisi B">
+                    <div class="gallery-caption">
+                        <strong>Toilet Pria & Wanita</strong>
+                        <span>Rest Area KM 10+550 Sisi B</span>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="restarea">
+                    <img loading="lazy" decoding="async" src="foto/t/proyek-022.webp" data-full="foto/proyek-022.webp" width="520" height="295" alt="Bangunan Utama - Rest Area KM 10+550 Sisi B">
+                    <div class="gallery-caption">
+                        <strong>Bangunan Utama</strong>
+                        <span>Rest Area KM 10+550 Sisi B</span>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="restarea">
+                    <img loading="lazy" decoding="async" src="foto/t/proyek-023.webp" data-full="foto/proyek-023.webp" width="520" height="295" alt="Masjid - Rest Area KM 10+550 Sisi B">
+                    <div class="gallery-caption">
+                        <strong>Masjid</strong>
+                        <span>Rest Area KM 10+550 Sisi B</span>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="restarea">
+                    <img loading="lazy" decoding="async" src="foto/t/proyek-024.webp" data-full="foto/proyek-024.webp" width="520" height="295" alt="Toilet Pria & Wanita - Rest Area KM 10+550 Sisi B">
+                    <div class="gallery-caption">
+                        <strong>Toilet Pria & Wanita</strong>
+                        <span>Rest Area KM 10+550 Sisi B</span>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="restarea">
+                    <img loading="lazy" decoding="async" src="foto/t/proyek-025.webp" data-full="foto/proyek-025.webp" width="520" height="295" alt="Fasilitas Kendaraan Besar - Rest Area KM 10+550 Sisi B">
+                    <div class="gallery-caption">
+                        <strong>Fasilitas Kendaraan Besar</strong>
+                        <span>Rest Area KM 10+550 Sisi B</span>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="restarea">
+                    <img loading="lazy" decoding="async" src="foto/t/proyek-026.webp" data-full="foto/proyek-026.webp" width="520" height="390" alt="Toilet Pria & Wanita (Selesai) - Rest Area Medan-Binjai, Tanjung Gusta">
+                    <div class="gallery-caption">
+                        <strong>Toilet Pria & Wanita (Selesai)</strong>
+                        <span>Rest Area Medan-Binjai, Tanjung Gusta</span>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="restarea">
+                    <img loading="lazy" decoding="async" src="foto/t/proyek-027.webp" data-full="foto/proyek-027.webp" width="520" height="390" alt="Toilet Pria & Wanita (Selesai) - Rest Area Medan-Binjai, Tanjung Gusta">
+                    <div class="gallery-caption">
+                        <strong>Toilet Pria & Wanita (Selesai)</strong>
+                        <span>Rest Area Medan-Binjai, Tanjung Gusta</span>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="restarea">
+                    <img loading="lazy" decoding="async" src="foto/t/proyek-028.webp" data-full="foto/proyek-028.webp" width="520" height="390" alt="TBM Briefing - Tim Kerja - Rest Area Medan-Binjai">
+                    <div class="gallery-caption">
+                        <strong>TBM Briefing</strong>
+                        <span>Tim Kerja - Rest Area Medan-Binjai</span>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="restarea">
+                    <img loading="lazy" decoding="async" src="foto/t/proyek-029.webp" data-full="foto/proyek-029.webp" width="520" height="390" alt="TBM Briefing - Tim Kerja - Rest Area Medan-Binjai">
+                    <div class="gallery-caption">
+                        <strong>TBM Briefing</strong>
+                        <span>Tim Kerja - Rest Area Medan-Binjai</span>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="restarea">
+                    <img loading="lazy" decoding="async" src="foto/t/proyek-030.webp" data-full="foto/proyek-030.webp" width="520" height="390" alt="Pengecatan Bangunan Utama - Rest Area Medan-Binjai">
+                    <div class="gallery-caption">
+                        <strong>Pengecatan Bangunan Utama</strong>
+                        <span>Rest Area Medan-Binjai</span>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="restarea">
+                    <img loading="lazy" decoding="async" src="foto/t/proyek-031.webp" data-full="foto/proyek-031.webp" width="520" height="390" alt="Pengecatan Bangunan Utama - Rest Area Medan-Binjai">
+                    <div class="gallery-caption">
+                        <strong>Pengecatan Bangunan Utama</strong>
+                        <span>Rest Area Medan-Binjai</span>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="restarea">
+                    <img loading="lazy" decoding="async" src="foto/t/proyek-032.webp" data-full="foto/proyek-032.webp" width="520" height="346" alt="Masjid - Rest Area KM 10+550 Sisi A">
+                    <div class="gallery-caption">
+                        <strong>Masjid</strong>
+                        <span>Rest Area KM 10+550 Sisi A</span>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="restarea">
+                    <img loading="lazy" decoding="async" src="foto/t/proyek-033.webp" data-full="foto/proyek-033.webp" width="520" height="346" alt="Toilet Pria & Wanita - Rest Area KM 10+550 Sisi A">
+                    <div class="gallery-caption">
+                        <strong>Toilet Pria & Wanita</strong>
+                        <span>Rest Area KM 10+550 Sisi A</span>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="restarea">
+                    <img loading="lazy" decoding="async" src="foto/t/proyek-034.webp" data-full="foto/proyek-034.webp" width="520" height="346" alt="Parkir Kendaraan Gol II-IV - Rest Area KM 10+550 Sisi A">
+                    <div class="gallery-caption">
+                        <strong>Parkir Kendaraan Gol II-IV</strong>
+                        <span>Rest Area KM 10+550 Sisi A</span>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="restarea">
+                    <img loading="lazy" decoding="async" src="foto/t/proyek-035.webp" data-full="foto/proyek-035.webp" width="520" height="346" alt="Toilet Pria & Wanita - Rest Area KM 10+550 Sisi A">
+                    <div class="gallery-caption">
+                        <strong>Toilet Pria & Wanita</strong>
+                        <span>Rest Area KM 10+550 Sisi A</span>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="restarea">
+                    <img loading="lazy" decoding="async" src="foto/t/proyek-036.webp" data-full="foto/proyek-036.webp" width="520" height="346" alt="Parkir Kendaraan Gol II-IV - Rest Area KM 10+550 Sisi A">
+                    <div class="gallery-caption">
+                        <strong>Parkir Kendaraan Gol II-IV</strong>
+                        <span>Rest Area KM 10+550 Sisi A</span>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="restarea">
+                    <img loading="lazy" decoding="async" src="foto/t/proyek-037.webp" data-full="foto/proyek-037.webp" width="520" height="346" alt="Toilet Pria & Wanita - Rest Area KM 10+550 Sisi B">
+                    <div class="gallery-caption">
+                        <strong>Toilet Pria & Wanita</strong>
+                        <span>Rest Area KM 10+550 Sisi B</span>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="restarea">
+                    <img loading="lazy" decoding="async" src="foto/t/proyek-038.webp" data-full="foto/proyek-038.webp" width="520" height="346" alt="Fasilitas Kendaraan Besar - Rest Area KM 10+550 Sisi B">
+                    <div class="gallery-caption">
+                        <strong>Fasilitas Kendaraan Besar</strong>
+                        <span>Rest Area KM 10+550 Sisi B</span>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="restarea">
+                    <img loading="lazy" decoding="async" src="foto/t/proyek-039.webp" data-full="foto/proyek-039.webp" width="520" height="346" alt="Masjid - Rest Area KM 10+550 Sisi B">
+                    <div class="gallery-caption">
+                        <strong>Masjid</strong>
+                        <span>Rest Area KM 10+550 Sisi B</span>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="restarea">
+                    <img loading="lazy" decoding="async" src="foto/t/proyek-040.webp" data-full="foto/proyek-040.webp" width="520" height="346" alt="Bangunan Utama - Rest Area KM 10+550 Sisi B">
+                    <div class="gallery-caption">
+                        <strong>Bangunan Utama</strong>
+                        <span>Rest Area KM 10+550 Sisi B</span>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="restarea">
+                    <img loading="lazy" decoding="async" src="foto/t/proyek-041.webp" data-full="foto/proyek-041.webp" width="520" height="346" alt="Toilet Pria & Wanita - Rest Area KM 10+550 Sisi B">
+                    <div class="gallery-caption">
+                        <strong>Toilet Pria & Wanita</strong>
+                        <span>Rest Area KM 10+550 Sisi B</span>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="restarea">
+                    <img loading="lazy" decoding="async" src="foto/t/proyek-042.webp" data-full="foto/proyek-042.webp" width="520" height="346" alt="Fasilitas Kendaraan Besar - Rest Area KM 10+550 Sisi A">
+                    <div class="gallery-caption">
+                        <strong>Fasilitas Kendaraan Besar</strong>
+                        <span>Rest Area KM 10+550 Sisi A</span>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="restarea">
+                    <img loading="lazy" decoding="async" src="foto/t/proyek-043.webp" data-full="foto/proyek-043.webp" width="520" height="346" alt="Bangunan Utama - Rest Area KM 10+550 Sisi A">
+                    <div class="gallery-caption">
+                        <strong>Bangunan Utama</strong>
+                        <span>Rest Area KM 10+550 Sisi A</span>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="restarea">
+                    <img loading="lazy" decoding="async" src="foto/t/proyek-044.webp" data-full="foto/proyek-044.webp" width="520" height="346" alt="Masjid - Rest Area KM 10+550 Sisi A">
+                    <div class="gallery-caption">
+                        <strong>Masjid</strong>
+                        <span>Rest Area KM 10+550 Sisi A</span>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="restarea">
+                    <img loading="lazy" decoding="async" src="foto/t/proyek-045.webp" data-full="foto/proyek-045.webp" width="520" height="346" alt="Toilet Pria & Wanita - Rest Area KM 10+550 Sisi A">
+                    <div class="gallery-caption">
+                        <strong>Toilet Pria & Wanita</strong>
+                        <span>Rest Area KM 10+550 Sisi A</span>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="restarea">
+                    <img loading="lazy" decoding="async" src="foto/t/proyek-046.webp" data-full="foto/proyek-046.webp" width="520" height="346" alt="Bangunan Utama - Rest Area KM 10+550 Sisi A">
+                    <div class="gallery-caption">
+                        <strong>Bangunan Utama</strong>
+                        <span>Rest Area KM 10+550 Sisi A</span>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="restarea">
+                    <img loading="lazy" decoding="async" src="foto/t/proyek-047.webp" data-full="foto/proyek-047.webp" width="520" height="346" alt="Masjid - Rest Area KM 10+550 Sisi A">
+                    <div class="gallery-caption">
+                        <strong>Masjid</strong>
+                        <span>Rest Area KM 10+550 Sisi A</span>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="sutt">
+                    <img loading="lazy" decoding="async" src="foto/t/proyek-048.webp" data-full="foto/proyek-048.webp" width="520" height="693" alt="Relokasi SUTT 150 kV - Instalasi Kabel GSW - Tower 13, Kab. Langkat">
+                    <div class="gallery-caption">
+                        <strong>Relokasi SUTT 150 kV - Instalasi Kabel GSW</strong>
+                        <span>Tower 13, Kab. Langkat</span>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="peribadatan">
+                    <img loading="lazy" decoding="async" src="foto/t/proyek-049.webp" data-full="foto/proyek-049.webp" width="520" height="390" alt="Scaffolding Onsite - Pekerjaan Peribadatan &middot; 20 Agustus 2026">
+                    <div class="gallery-caption">
+                        <strong>Scaffolding Onsite</strong>
+                        <span>Pekerjaan Peribadatan &middot; 20 Agustus 2026</span>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="peribadatan">
+                    <img loading="lazy" decoding="async" src="foto/t/proyek-050.webp" data-full="foto/proyek-050.webp" width="520" height="390" alt="Material Pasir Onsite - Pekerjaan Peribadatan &middot; 20 Agustus 2026">
+                    <div class="gallery-caption">
+                        <strong>Material Pasir Onsite</strong>
+                        <span>Pekerjaan Peribadatan &middot; 20 Agustus 2026</span>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="peribadatan">
+                    <img loading="lazy" decoding="async" src="foto/t/proyek-051.webp" data-full="foto/proyek-051.webp" width="520" height="390" alt="Material Semen Onsite - Pekerjaan Peribadatan &middot; 20 Agustus 2026">
+                    <div class="gallery-caption">
+                        <strong>Material Semen Onsite</strong>
+                        <span>Pekerjaan Peribadatan &middot; 20 Agustus 2026</span>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="peribadatan">
+                    <img loading="lazy" decoding="async" src="foto/t/proyek-052.webp" data-full="foto/proyek-052.webp" width="520" height="390" alt="Scaffolding Onsite - Pekerjaan Peribadatan &middot; 20 Agustus 2026">
+                    <div class="gallery-caption">
+                        <strong>Scaffolding Onsite</strong>
+                        <span>Pekerjaan Peribadatan &middot; 20 Agustus 2026</span>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="peribadatan">
+                    <img loading="lazy" decoding="async" src="foto/t/proyek-053.webp" data-full="foto/proyek-053.webp" width="520" height="693" alt="Struktur Menara Mesjid - Renov Mesjid Al-Ikhlas Cengkeh">
+                    <div class="gallery-caption">
+                        <strong>Struktur Menara Mesjid</strong>
+                        <span>Renov Mesjid Al-Ikhlas Cengkeh</span>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="peribadatan">
+                    <img loading="lazy" decoding="async" src="foto/t/proyek-054.webp" data-full="foto/proyek-054.webp" width="520" height="693" alt="Renov Mesjid Al-Ikhlas Cengkeh - Jl. Bawang Raya II No. 60-76, Medan">
+                    <div class="gallery-caption">
+                        <strong>Renov Mesjid Al-Ikhlas Cengkeh</strong>
+                        <span>Jl. Bawang Raya II No. 60-76, Medan</span>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="peribadatan">
+                    <img loading="lazy" decoding="async" src="foto/t/proyek-055.webp" data-full="foto/proyek-055.webp" width="520" height="693" alt="Renov Mesjid Al-Ikhlas Cengkeh - Medan, Sumatera Utara">
+                    <div class="gallery-caption">
+                        <strong>Renov Mesjid Al-Ikhlas Cengkeh</strong>
+                        <span>Medan, Sumatera Utara</span>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="peribadatan">
+                    <img loading="lazy" decoding="async" src="foto/t/proyek-056.webp" data-full="foto/proyek-056.webp" width="520" height="693" alt="Renov Mesjid Al-Ikhlas Cengkeh - Medan, Sumatera Utara">
+                    <div class="gallery-caption">
+                        <strong>Renov Mesjid Al-Ikhlas Cengkeh</strong>
+                        <span>Medan, Sumatera Utara</span>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="peribadatan">
+                    <img loading="lazy" decoding="async" src="foto/t/proyek-057.webp" data-full="foto/proyek-057.webp" width="520" height="693" alt="Renov Mesjid Al-Ikhlas Cengkeh - Medan, Sumatera Utara">
+                    <div class="gallery-caption">
+                        <strong>Renov Mesjid Al-Ikhlas Cengkeh</strong>
+                        <span>Medan, Sumatera Utara</span>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="peribadatan">
+                    <img loading="lazy" decoding="async" src="foto/t/proyek-058.webp" data-full="foto/proyek-058.webp" width="520" height="693" alt="Kegiatan TBM - Kecamatan Medan Deli, Kota Medan">
+                    <div class="gallery-caption">
+                        <strong>Kegiatan TBM</strong>
+                        <span>Kecamatan Medan Deli, Kota Medan</span>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="peribadatan">
+                    <img loading="lazy" decoding="async" src="foto/t/proyek-059.webp" data-full="foto/proyek-059.webp" width="520" height="390" alt="Cat Siler Dalam - Pekerjaan Peribadatan &middot; 25 Okt 2026">
+                    <div class="gallery-caption">
+                        <strong>Cat Siler Dalam</strong>
+                        <span>Pekerjaan Peribadatan &middot; 25 Okt 2026</span>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="peribadatan">
+                    <img loading="lazy" decoding="async" src="foto/t/proyek-060.webp" data-full="foto/proyek-060.webp" width="520" height="390" alt="Pemasangan Kubah Masjid - Pekerjaan Peribadatan &middot; 25 Okt 2026">
+                    <div class="gallery-caption">
+                        <strong>Pemasangan Kubah Masjid</strong>
+                        <span>Pekerjaan Peribadatan &middot; 25 Okt 2026</span>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="peribadatan">
+                    <img loading="lazy" decoding="async" src="foto/t/proyek-061.webp" data-full="foto/proyek-061.webp" width="520" height="390" alt="Pemasangan Kubah Masjid - Pekerjaan Peribadatan &middot; 25 Okt 2026">
+                    <div class="gallery-caption">
+                        <strong>Pemasangan Kubah Masjid</strong>
+                        <span>Pekerjaan Peribadatan &middot; 25 Okt 2026</span>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="peribadatan">
+                    <img loading="lazy" decoding="async" src="foto/t/proyek-062.webp" data-full="foto/proyek-062.webp" width="520" height="693" alt="Pemasangan Keramik - Pekerjaan Peribadatan &middot; 25 Okt 2026">
+                    <div class="gallery-caption">
+                        <strong>Pemasangan Keramik</strong>
+                        <span>Pekerjaan Peribadatan &middot; 25 Okt 2026</span>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="peribadatan">
+                    <img loading="lazy" decoding="async" src="foto/t/proyek-063.webp" data-full="foto/proyek-063.webp" width="520" height="693" alt="Pemasangan Keramik - Pekerjaan Peribadatan &middot; 25 Okt 2026">
+                    <div class="gallery-caption">
+                        <strong>Pemasangan Keramik</strong>
+                        <span>Pekerjaan Peribadatan &middot; 25 Okt 2026</span>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="peribadatan">
+                    <img loading="lazy" decoding="async" src="foto/t/proyek-064.webp" data-full="foto/proyek-064.webp" width="520" height="390" alt="Pengecoran Lantai Kerja - Pekerjaan Peribadatan &middot; 12 Okt 2026">
+                    <div class="gallery-caption">
+                        <strong>Pengecoran Lantai Kerja</strong>
+                        <span>Pekerjaan Peribadatan &middot; 12 Okt 2026</span>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="peribadatan">
+                    <img loading="lazy" decoding="async" src="foto/t/proyek-065.webp" data-full="foto/proyek-065.webp" width="520" height="390" alt="Plesteran - Pekerjaan Peribadatan &middot; 13 Okt 2026">
+                    <div class="gallery-caption">
+                        <strong>Plesteran</strong>
+                        <span>Pekerjaan Peribadatan &middot; 13 Okt 2026</span>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="peribadatan">
+                    <img loading="lazy" decoding="async" src="foto/t/proyek-066.webp" data-full="foto/proyek-066.webp" width="520" height="693" alt="Kunjungan HK - Pekerjaan Peribadatan &middot; 14 Okt 2026">
+                    <div class="gallery-caption">
+                        <strong>Kunjungan HK</strong>
+                        <span>Pekerjaan Peribadatan &middot; 14 Okt 2026</span>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="peribadatan">
+                    <img loading="lazy" decoding="async" src="foto/t/proyek-067.webp" data-full="foto/proyek-067.webp" width="520" height="390" alt="Pemasangan Keramik - Jalan Kayu Putih, Mabar, Kec. Medan Deli, Kota Medan">
+                    <div class="gallery-caption">
+                        <strong>Pemasangan Keramik</strong>
+                        <span>Jalan Kayu Putih, Mabar, Kec. Medan Deli, Kota Medan</span>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="peribadatan">
+                    <img loading="lazy" decoding="async" src="foto/t/proyek-068.webp" data-full="foto/proyek-068.webp" width="520" height="693" alt="Hollo Kobe Onsite - Tanjung Mulia Hilir, Kec. Medan Deli, Kota Medan">
+                    <div class="gallery-caption">
+                        <strong>Hollo Kobe Onsite</strong>
+                        <span>Tanjung Mulia Hilir, Kec. Medan Deli, Kota Medan</span>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="peribadatan">
+                    <img loading="lazy" decoding="async" src="foto/t/proyek-069.webp" data-full="foto/proyek-069.webp" width="520" height="693" alt="Kegiatan TBM - Pekerjaan Peribadatan &middot; 20 Okt 2026">
+                    <div class="gallery-caption">
+                        <strong>Kegiatan TBM</strong>
+                        <span>Pekerjaan Peribadatan &middot; 20 Okt 2026</span>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="peribadatan">
+                    <img loading="lazy" decoding="async" src="foto/t/proyek-070.webp" data-full="foto/proyek-070.webp" width="520" height="693" alt="Kegiatan TBM - Pekerjaan Peribadatan &middot; 22 Okt 2026">
+                    <div class="gallery-caption">
+                        <strong>Kegiatan TBM</strong>
+                        <span>Pekerjaan Peribadatan &middot; 22 Okt 2026</span>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="peribadatan">
+                    <img loading="lazy" decoding="async" src="foto/t/proyek-071.webp" data-full="foto/proyek-071.webp" width="520" height="390" alt="Pemasangan Paving Blok - Pekerjaan Peribadatan &middot; 22 Okt 2026">
+                    <div class="gallery-caption">
+                        <strong>Pemasangan Paving Blok</strong>
+                        <span>Pekerjaan Peribadatan &middot; 22 Okt 2026</span>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="peribadatan">
+                    <img loading="lazy" decoding="async" src="foto/t/proyek-072.webp" data-full="foto/proyek-072.webp" width="520" height="693" alt="Pemasangan Kubah Masjid - Pekerjaan Peribadatan">
+                    <div class="gallery-caption">
+                        <strong>Pemasangan Kubah Masjid</strong>
+                        <span>Pekerjaan Peribadatan</span>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="peribadatan">
+                    <img loading="lazy" decoding="async" src="foto/t/proyek-073.webp" data-full="foto/proyek-073.webp" width="520" height="390" alt="Cat Dinding Luar - Pekerjaan Peribadatan &middot; 23 Okt 2026">
+                    <div class="gallery-caption">
+                        <strong>Cat Dinding Luar</strong>
+                        <span>Pekerjaan Peribadatan &middot; 23 Okt 2026</span>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="peribadatan">
+                    <img loading="lazy" decoding="async" src="foto/t/proyek-074.webp" data-full="foto/proyek-074.webp" width="520" height="390" alt="Pemasangan Plafond PVC - Pekerjaan Peribadatan &middot; 24 Okt 2026">
+                    <div class="gallery-caption">
+                        <strong>Pemasangan Plafond PVC</strong>
+                        <span>Pekerjaan Peribadatan &middot; 24 Okt 2026</span>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="peribadatan">
+                    <img loading="lazy" decoding="async" src="foto/t/proyek-075.webp" data-full="foto/proyek-075.webp" width="520" height="390" alt="Cat Dinding Luar - Pekerjaan Peribadatan &middot; 24 Okt 2026">
+                    <div class="gallery-caption">
+                        <strong>Cat Dinding Luar</strong>
+                        <span>Pekerjaan Peribadatan &middot; 24 Okt 2026</span>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="peribadatan">
+                    <img loading="lazy" decoding="async" src="foto/t/proyek-076.webp" data-full="foto/proyek-076.webp" width="520" height="693" alt="Kegiatan TBM - Pekerjaan Peribadatan &middot; 25 Okt 2026">
+                    <div class="gallery-caption">
+                        <strong>Kegiatan TBM</strong>
+                        <span>Pekerjaan Peribadatan &middot; 25 Okt 2026</span>
+                    </div>
+                </div>
+                <div class="gallery-card" data-category="peribadatan">
+                    <img loading="lazy" decoding="async" src="foto/t/proyek-077.webp" data-full="foto/proyek-077.webp" width="520" height="390" alt="Pemasangan Kubah Masjid - Pekerjaan Peribadatan &middot; 25 Okt 2026">
+                    <div class="gallery-caption">
+                        <strong>Pemasangan Kubah Masjid</strong>
+                        <span>Pekerjaan Peribadatan &middot; 25 Okt 2026</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAPS SECTION (baru muncul saat dipilih dari menu) -->
+    <section class="maps-section page-section" id="lokasi-peta">
+        <div class="container">
+            <div class="section-title">
+                <h2>Lokasi Kantor Kami</h2>
+            </div>
+            <div class="maps-card">
+                <div class="maps-wrapper">
+                    <iframe id="officeMapFrame"
+                        src="https://www.google.com/maps?q=Jl.+Aman+I+No.12,+Teladan+Bar.,+Kec.+Medan+Kota,+Kota+Medan,+Sumatera+Utara+20216&output=embed" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <div class="maps-info-bar">
+                    <p>📍 <strong id="officeNameText">PT PERINTIS TRANSMISI ASIA</strong> — <span id="officeAddressText">Jl. Aman I No.12, Teladan Bar., Kec. Medan Kota, Kota Medan, Sumatera Utara 20216</span></p>
+                    <a id="officeMapLink" href="https://www.google.com/maps/search/?api=1&query=Jl.+Aman+I+No.12,+Teladan+Bar.,+Kec.+Medan+Kota,+Kota+Medan,+Sumatera+Utara+20216" target="_blank">Buka Google Maps ↗</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER & KONTAK (baru muncul saat dipilih dari menu) -->
+    <footer class="page-section" id="kontak">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-logo">
+                        <svg viewBox="0 0 540 145" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="ptaBadgeGradFooter" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#284b81"/>
+                                    <stop offset="100%" stop-color="#131f34"/>
+                                </linearGradient>
+                            </defs>
+                            <path d="M 20 60 A 45 45 0 0 1 110 60 L 98 60 A 33 33 0 0 0 32 60 Z" fill="url(#ptaBadgeGradFooter)"/>
+                            <path d="M 32 60 A 33 33 0 0 1 98 60 L 86 60 A 21 21 0 0 0 44 60 Z" fill="url(#ptaBadgeGradFooter)"/>
+                            <path d="M 44 60 A 21 21 0 0 1 86 60 Z" fill="#e30613"/>
+                            <rect x="16" y="61" width="98" height="44" rx="10" fill="url(#ptaBadgeGradFooter)"/>
+                            <text x="24" y="93" font-family="'Segoe UI Black', Arial, sans-serif" font-weight="900" font-size="30" fill="#ffffff" letter-spacing="1">PTA</text>
+                            <rect x="16" y="108" width="98" height="5" rx="2.5" fill="#FFE600"/>
+                            <text x="135" y="65" font-family="'Segoe UI Black', sans-serif" font-weight="900" font-size="38" fill="#050505">PERINTIS</text>
+                            <text x="135" y="105" font-family="'Segoe UI Black', sans-serif" font-weight="900" font-size="28" fill="#050505">TRANSMISI ASIA</text>
+                        </svg>
+                    </div>
+                    <p>Mitra terpercaya untuk solusi konstruksi sipil, rekayasa rekayasa teknik, dan infrastruktur transmisi modern.</p>
+                </div>
+                <div class="footer-contact">
+                    <h4>Hubungi Kami</h4>
+                    <a href="mailto:perintistransmisi@gmail.com">✉️ perintistransmisi@gmail.com</a>
+                    <a href="mailto:mirandaciian04@gmail.com">✉️ mirandaciian04@gmail.com</a>
+                    <a href="https://wa.me/6282195231177?text=Halo%20PT%20PERINTIS%20TRANSMISI%20ASIA,%20saya%20ingin%20konsultasi%20proyek." target="_blank">📞 +62 821-9523-1177</a>
+                    <a href="https://wa.me/6281360345385?text=Halo%20PT%20PERINTIS%20TRANSMISI%20ASIA,%20saya%20ingin%20konsultasi%20proyek." target="_blank">📞 +62 813-6034-5385</a>
+                </div>
+            </div>
+
+            <div class="contact-form-card">
+                <h4>✉️ Kirim Pesan ke Email Kami</h4>
+                <p class="form-subtitle">Isi form di bawah ini, aplikasi email Anda akan terbuka otomatis dengan pesan yang sudah terisi ke perintistransmisi@gmail.com dan mirandaciian04@gmail.com.</p>
+                <form id="emailContactForm" onsubmit="sendContactEmail(event)">
+                    <div class="form-row">
+                        <div>
+                            <label for="ccName">Nama Lengkap</label>
+                            <input type="text" id="ccName" required placeholder="Nama Anda">
+                        </div>
+                        <div>
+                            <label for="ccEmail">Email Anda</label>
+                            <input type="email" id="ccEmail" required placeholder="nama@email.com">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div>
+                            <label for="ccPhone">No. Telepon</label>
+                            <input type="tel" id="ccPhone" placeholder="08xx-xxxx-xxxx">
+                        </div>
+                        <div>
+                            <label for="ccSubject">Subjek</label>
+                            <input type="text" id="ccSubject" placeholder="Mis. Konsultasi Proyek">
+                        </div>
+                    </div>
+
+                    <label for="ccMessage">Pesan</label>
+                    <textarea id="ccMessage" required placeholder="Tuliskan kebutuhan proyek atau pertanyaan Anda..."></textarea>
+
+                    <button type="submit" class="btn-send-email">📨 Kirim Pesan via Email</button>
+                    <p class="form-note">Tombol ini akan membuka aplikasi email default di perangkat Anda.</p>
+                </form>
+            </div>
+            <div class="copyright">
+                &copy; 2026 PT PERINTIS TRANSMISI ASIA. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- LIGHTBOX OVERLAY UNTUK ZOOM FOTO GALERI -->
+    <div class="lightbox-overlay" id="lightboxOverlay" onclick="closeLightbox()">
+        <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+        <img id="lightboxImage" src="" alt="">
+        <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+
+    <!-- TOMBOL KEMBALI KE ATAS -->
+    <button class="back-to-top" id="backToTopBtn" onclick="scrollToTop()" aria-label="Kembali ke atas">↑</button>
+
+    <!-- JAVASCRIPT UTILS -->
+    <script>
+        // Sembunyikan Splash Screen secara otomatis setelah 2.2 detik
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                const splash = document.getElementById('splash-screen');
+                if (splash) {
+                    splash.classList.add('hidden');
+                }
+            }, 2200);
+        });
+
+        // Toggle Drawer Sidebar
+        function toggleMenu() {
+            const drawer = document.getElementById('drawerMenu');
+            const backdrop = document.getElementById('backdrop');
+            drawer.classList.toggle('active');
+            backdrop.classList.toggle('active');
+        }
+
+        // Navigasi antar bagian (SPA-style) — BARU
+        // Menyembunyikan semua bagian, lalu menampilkan hanya bagian
+        // yang dipilih dari menu (mis. "layanan", "lokasi-peta", "kontak", "beranda").
+        function showPage(id) {
+            document.querySelectorAll('.page-section').forEach(function (section) {
+                section.classList.remove('active');
+            });
+            const target = document.getElementById(id);
+            if (target) {
+                target.classList.add('active');
+            }
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            setTimeout(revealVisibleGalleryCards, 60);
+            setTimeout(checkStatsVisibility, 60);
+        }
+
+        // Filter Dokumentasi Proyek berdasarkan kategori (baru)
+        function filterGallery(category, btn) {
+            document.querySelectorAll('.filter-tab').forEach(function (tab) {
+                tab.classList.remove('active');
+            });
+            if (btn) btn.classList.add('active');
+
+            document.querySelectorAll('.gallery-card').forEach(function (card) {
+                const cardCategory = card.getAttribute('data-category');
+                if (category === 'semua' || cardCategory === category) {
+                    card.classList.remove('filtered-out');
+                } else {
+                    card.classList.add('filtered-out');
+                }
+            });
+            setTimeout(revealVisibleGalleryCards, 60);
+        }
+
+        // Kirim Pesan Form Kontak via Email Perusahaan
+        function sendContactEmail(event) {
+            event.preventDefault();
+
+            const name = document.getElementById('ccName').value.trim();
+            const senderEmail = document.getElementById('ccEmail').value.trim();
+            const phone = document.getElementById('ccPhone').value.trim();
+            const subjectField = document.getElementById('ccSubject').value.trim();
+            const message = document.getElementById('ccMessage').value.trim();
+
+            const companyEmail = 'perintistransmisi@gmail.com,mirandaciian04@gmail.com';
+            const subject = subjectField ? subjectField : ('Pesan dari Website - ' + name);
+            const body =
+                'Nama: ' + name + '\n' +
+                'Email: ' + senderEmail + '\n' +
+                'No. Telepon: ' + (phone ? phone : '-') + '\n\n' +
+                'Pesan:\n' + message;
+
+            const mailtoLink = 'mailto:' + companyEmail +
+                '?subject=' + encodeURIComponent(subject) +
+                '&body=' + encodeURIComponent(body);
+
+            window.location.href = mailtoLink;
+        }
+
+        // ============================================================
+        // SCROLL REVEAL UNTUK GALERI FOTO
+        // ============================================================
+        const galleryObserver = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('reveal');
+                    galleryObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.15 });
+
+        function initGalleryReveal() {
+            document.querySelectorAll('.gallery-card').forEach(function (card) {
+                galleryObserver.observe(card);
+            });
+        }
+
+        // Fallback: paksa cek kartu yang sudah ada di layar begitu halaman Layanan dibuka
+        function revealVisibleGalleryCards() {
+            const vh = window.innerHeight;
+            document.querySelectorAll('.gallery-card:not(.reveal)').forEach(function (card) {
+                const rect = card.getBoundingClientRect();
+                if (rect.top < vh && rect.bottom > 0) {
+                    card.classList.add('reveal');
+                }
+            });
+        }
+
+        window.addEventListener('load', initGalleryReveal);
+        window.addEventListener('scroll', revealVisibleGalleryCards);
+
+        // ============================================================
+        // ANIMASI ANGKA COUNT-UP (STATISTIK TENTANG KAMI)
+        // ============================================================
+        let statsAnimated = false;
+
+        function animateStats() {
+            if (statsAnimated) return;
+            statsAnimated = true;
+
+            document.querySelectorAll('.stat-number').forEach(function (el) {
+                const target = parseInt(el.getAttribute('data-target'), 10);
+                const duration = 1400;
+                const startTime = performance.now();
+
+                function step(now) {
+                    const progress = Math.min((now - startTime) / duration, 1);
+                    const eased = 1 - Math.pow(1 - progress, 3);
+                    el.textContent = Math.floor(eased * target);
+                    if (progress < 1) {
+                        requestAnimationFrame(step);
+                    } else {
+                        el.textContent = target;
+                    }
+                }
+                requestAnimationFrame(step);
+            });
+        }
+
+        function checkStatsVisibility() {
+            const statsRow = document.querySelector('.stats-row');
+            if (!statsRow || statsAnimated) return;
+            const rect = statsRow.getBoundingClientRect();
+            if (rect.top < window.innerHeight && rect.bottom > 0) {
+                animateStats();
+            }
+        }
+
+        window.addEventListener('scroll', checkStatsVisibility);
+        window.addEventListener('load', checkStatsVisibility);
+
+        // ============================================================
+        // LIGHTBOX FOTO GALERI
+        // ============================================================
+        function initLightbox() {
+            document.querySelectorAll('.gallery-card img').forEach(function (img) {
+                img.addEventListener('click', function (e) {
+                    e.stopPropagation();
+                    const overlay = document.getElementById('lightboxOverlay');
+                    const lightboxImg = document.getElementById('lightboxImage');
+                    const caption = document.getElementById('lightboxCaption');
+                    lightboxImg.src = img.getAttribute('data-full') || img.src;
+                    lightboxImg.alt = img.alt;
+                    caption.textContent = img.alt;
+                    overlay.classList.add('active');
+                });
+            });
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightboxOverlay').classList.remove('active');
+        }
+
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') closeLightbox();
+        });
+
+        window.addEventListener('load', initLightbox);
+
+        // ============================================================
+        // TOMBOL KEMBALI KE ATAS
+        // ============================================================
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        window.addEventListener('scroll', function () {
+            const btn = document.getElementById('backToTopBtn');
+            if (window.scrollY > 400) {
+                btn.classList.add('visible');
+            } else {
+                btn.classList.remove('visible');
+            }
+        });
+    
+    // Slideshow background beranda (ganti tiap 5 detik)
+    (function () {
+        var slides = document.querySelectorAll('.hero-slide');
+        if (slides.length < 2) return;
+        var cur = 0;
+        function loadSlide(i) {
+            var im = slides[i];
+            if (im && im.hasAttribute('data-src')) {
+                im.srcset = im.getAttribute('data-srcset');
+                im.src = im.getAttribute('data-src');
+                im.removeAttribute('data-src');
+            }
+        }
+        window.addEventListener('load', function () { loadSlide(1); });
+        setInterval(function () {
+            slides[cur].classList.remove('active');
+            cur = (cur + 1) % slides.length;
+            loadSlide(cur);
+            slides[cur].classList.add('active');
+            loadSlide((cur + 1) % slides.length);
+        }, 5000);
+    })();
+
+    // ============================================================
+    // LOKASI KANTOR: data bawaan + pembacaan lokasi.json + panel pemilik
+    // ============================================================
+    var ADMIN_HASH = '27q01xoj1mw'; // hash kata sandi pemilik (bukan kata sandi aslinya)
+    var DEFAULT_OFFICE = {
+        nama: 'PT PERINTIS TRANSMISI ASIA',
+        alamat: 'Jl. Aman I No.12, Teladan Bar., Kec. Medan Kota, Kota Medan, Sumatera Utara 20216',
+        linkMaps: ''
+    };
+    var ALLOWED_MAP_HOSTS = ['google.com', 'www.google.com', 'maps.google.com', 'maps.app.goo.gl', 'goo.gl', 'share.google', 'g.co'];
+
+    function cyrb53(str, seed) {
+        seed = seed || 0;
+        var h1 = 0xdeadbeef ^ seed, h2 = 0x41c6ce57 ^ seed;
+        for (var i = 0, ch; i < str.length; i++) {
+            ch = str.charCodeAt(i);
+            h1 = Math.imul(h1 ^ ch, 2654435761);
+            h2 = Math.imul(h2 ^ ch, 1597334677);
+        }
+        h1 = Math.imul(h1 ^ (h1 >>> 16), 2246822507) ^ Math.imul(h2 ^ (h2 >>> 13), 3266489909);
+        h2 = Math.imul(h2 ^ (h2 >>> 16), 2246822507) ^ Math.imul(h1 ^ (h1 >>> 13), 3266489909);
+        return (4294967296 * (2097151 & h2) + (h1 >>> 0)).toString(36);
+    }
+
+    function safeMapLink(link) {
+        try {
+            var u = new URL(link);
+            if (u.protocol === 'https:' && ALLOWED_MAP_HOSTS.indexOf(u.hostname) !== -1) return u.href;
+        } catch (e) {}
+        return '';
+    }
+
+    function applyOffice(o) {
+        var alamat = String(o.alamat || '').trim();
+        if (!alamat) return false;
+        var nama = String(o.nama || DEFAULT_OFFICE.nama).trim();
+        document.getElementById('officeNameText').textContent = nama;
+        document.getElementById('officeAddressText').textContent = alamat;
+        document.getElementById('officeMapFrame').src = 'https://www.google.com/maps?q=' + encodeURIComponent(alamat) + '&output=embed';
+        document.getElementById('officeMapLink').href = safeMapLink(o.linkMaps || '') ||
+            ('https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(alamat));
+        return true;
+    }
+
+    // Baca lokasi.json (jika ada) supaya pengunjung melihat lokasi terbaru
+    (function () {
+        if (!window.fetch) return;
+        fetch('lokasi.json?v=' + Date.now(), { cache: 'no-store' })
+            .then(function (r) { return r.ok ? r.json() : null; })
+            .then(function (d) { if (d) applyOffice(d); })
+            .catch(function () {});
+    })();
+
+    function adminOpen() {
+        var box = document.getElementById('adminLokasi');
+        box.classList.add('open');
+        box.setAttribute('aria-hidden', 'false');
+        document.getElementById('adminLogin').style.display = '';
+        document.getElementById('adminForm').style.display = 'none';
+        document.getElementById('adminMenu').style.display = 'none';
+        document.getElementById('adminFoto').style.display = 'none';
+        document.getElementById('adminPass').value = '';
+        document.getElementById('adminLoginMsg').textContent = '';
+    }
+    function adminClose() {
+        var box = document.getElementById('adminLokasi');
+        box.classList.remove('open');
+        box.setAttribute('aria-hidden', 'true');
+        if (location.hash === '#kelola-lokasi-pta') history.replaceState(null, '', location.pathname + location.search);
+    }
+    var adminFails = 0;
+    function adminLogin() {
+        var msg = document.getElementById('adminLoginMsg');
+        if (adminFails >= 5) { msg.textContent = 'Terlalu banyak percobaan. Muat ulang halaman.'; return; }
+        if (cyrb53(document.getElementById('adminPass').value) === ADMIN_HASH) {
+            document.getElementById('adminLogin').style.display = 'none';
+            document.getElementById('adminMenu').style.display = '';
+            adminSandi = document.getElementById('adminPass').value;
+            adminDetectServer();
+            document.getElementById('adminNama').value = document.getElementById('officeNameText').textContent;
+            document.getElementById('adminAlamat').value = document.getElementById('officeAddressText').textContent;
+            document.getElementById('adminLink').value = '';
+        } else {
+            adminFails++;
+            msg.textContent = 'Kata sandi salah.';
+        }
+    }
+    function adminRead() {
+        var link = document.getElementById('adminLink').value.trim();
+        var msg = document.getElementById('adminMsg');
+        msg.className = 'admin-msg';
+        if (!document.getElementById('adminAlamat').value.trim()) { msg.textContent = 'Alamat tidak boleh kosong.'; return null; }
+        if (link && !safeMapLink(link)) { msg.textContent = 'Link tidak dikenali. Gunakan link dari Google Maps / share.google, atau kosongkan.'; return null; }
+        return {
+            nama: document.getElementById('adminNama').value.trim() || DEFAULT_OFFICE.nama,
+            alamat: document.getElementById('adminAlamat').value.trim(),
+            linkMaps: link
+        };
+    }
+    function adminPreview() {
+        var o = adminRead();
+        if (!o) return;
+        applyOffice(o);
+        var msg = document.getElementById('adminMsg');
+        msg.className = 'admin-msg ok';
+        msg.textContent = 'Pratinjau diterapkan di perangkat ini. Buka menu Lokasi Kantor untuk melihatnya.';
+    }
+    function adminDownload() {
+        var o = adminRead();
+        if (!o) return;
+        var blob = new Blob([JSON.stringify(o, null, 2)], { type: 'application/json' });
+        var a = document.createElement('a');
+        a.href = URL.createObjectURL(blob);
+        a.download = 'lokasi.json';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        var msg = document.getElementById('adminMsg');
+        msg.className = 'admin-msg ok';
+        msg.textContent = 'lokasi.json terunduh. Sekarang upload & timpa file lokasi.json di tempat website berada.';
+    }
+
+    // ============================================================
+    // FOTO PROYEK TAMBAHAN (dibaca dari proyek-tambahan.json) + panel pemilik
+    // ============================================================
+    var extraPhotos = [];
+
+    function adminShow(which) {
+        ['adminMenu', 'adminForm', 'adminFoto'].forEach(function (id) {
+            document.getElementById(id).style.display = 'none';
+        });
+        if (which === 'lokasi') document.getElementById('adminForm').style.display = '';
+        else if (which === 'foto') { adminFillKat(); adminFotoList(); document.getElementById('adminFoto').style.display = ''; }
+        else document.getElementById('adminMenu').style.display = '';
+    }
+
+    function adminFillKat() {
+        var sel = document.getElementById('adminKat');
+        sel.innerHTML = '';
+        document.querySelectorAll('.filter-tab').forEach(function (tab) {
+            if (tab.getAttribute('data-filter') === 'semua') return;
+            var o = document.createElement('option');
+            o.value = tab.textContent.trim();
+            o.textContent = tab.textContent.trim();
+            sel.appendChild(o);
+        });
+        var n = document.createElement('option');
+        n.value = '__baru__';
+        n.textContent = '➕ Kategori baru…';
+        sel.appendChild(n);
+        adminKatChange();
+    }
+    function adminKatChange() {
+        var baru = document.getElementById('adminKat').value === '__baru__';
+        document.getElementById('adminKatBaru').style.display = baru ? '' : 'none';
+    }
+
+    function katSlug(nama) {
+        var n = String(nama).trim().toLowerCase();
+        var tabs = document.querySelectorAll('.filter-tab');
+        for (var i = 0; i < tabs.length; i++) {
+            var f = tabs[i].getAttribute('data-filter');
+            if (f !== 'semua' && tabs[i].textContent.trim().toLowerCase() === n) return f;
+        }
+        return 'k-' + (n.replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '') || cyrb53(n));
+    }
+
+    function openLightboxImg(img) {
+        document.getElementById('lightboxImage').src = img.src;
+        document.getElementById('lightboxImage').alt = img.alt;
+        document.getElementById('lightboxCaption').textContent = img.alt;
+        document.getElementById('lightboxOverlay').classList.add('active');
+    }
+
+    function updateFotoStat() {
+        var total = document.querySelectorAll('.gallery-card').length;
+        document.querySelectorAll('.stat-label').forEach(function (lb) {
+            if (lb.textContent.indexOf('Foto Dokumentasi') === -1) return;
+            var num = lb.parentNode.querySelector('.stat-number');
+            if (!num) return;
+            num.setAttribute('data-target', total);
+            if (typeof statsAnimated !== 'undefined' && statsAnimated) num.textContent = total;
+        });
+    }
+
+    function renderExtra() {
+        document.querySelectorAll('.gallery-card[data-extra]').forEach(function (n) { n.remove(); });
+        document.querySelectorAll('.filter-tab[data-extra]').forEach(function (n) { n.remove(); });
+        var grid = document.querySelector('.gallery-grid');
+        var tabsBox = document.querySelector('.filter-tabs');
+        if (!grid || !tabsBox) return;
+        extraPhotos.forEach(function (p) {
+            var slug = katSlug(p.kategori);
+            if (!document.querySelector('.filter-tab[data-filter="' + slug + '"]')) {
+                var btn = document.createElement('button');
+                btn.className = 'filter-tab';
+                btn.setAttribute('data-filter', slug);
+                btn.setAttribute('data-extra', '1');
+                btn.textContent = p.kategori;
+                btn.addEventListener('click', function () { filterGallery(slug, btn); });
+                tabsBox.appendChild(btn);
+            }
+            var card = document.createElement('div');
+            card.className = 'gallery-card reveal';
+            card.setAttribute('data-category', slug);
+            card.setAttribute('data-extra', '1');
+            var img = document.createElement('img');
+            img.src = p.gambar;
+            img.alt = p.judul + (p.lokasi ? ' - ' + p.lokasi : '');
+            img.loading = 'lazy';
+            img.addEventListener('click', function (e) { e.stopPropagation(); openLightboxImg(img); });
+            var cap = document.createElement('div');
+            cap.className = 'gallery-caption';
+            var st = document.createElement('strong'); st.textContent = p.judul;
+            var sp = document.createElement('span'); sp.textContent = p.lokasi;
+            cap.appendChild(st); cap.appendChild(sp);
+            card.appendChild(img); card.appendChild(cap);
+            grid.appendChild(card);
+        });
+        var act = document.querySelector('.filter-tab.active');
+        if (act) filterGallery(act.getAttribute('data-filter'), act);
+        updateFotoStat();
+    }
+
+    function cleanExtra(list) {
+        var out = [];
+        (Array.isArray(list) ? list : []).forEach(function (p) {
+            if (!p || typeof p.gambar !== 'string' || !(p.gambar.indexOf('data:image/') === 0 || /^foto-proyek\/[A-Za-z0-9._-]+$/.test(p.gambar))) return;
+            var kat = String(p.kategori || '').trim().slice(0, 40);
+            if (!kat) return;
+            out.push({ kategori: kat, judul: String(p.judul || 'Dokumentasi Proyek').trim().slice(0, 80), lokasi: String(p.lokasi || '').trim().slice(0, 100), gambar: p.gambar });
+        });
+        return out;
+    }
+
+    updateFotoStat();
+    (function () {
+        if (!window.fetch) return;
+        fetch('proyek-tambahan.json?v=' + Date.now(), { cache: 'no-store' })
+            .then(function (r) { return r.ok ? r.json() : null; })
+            .then(function (d) { if (d && d.foto) { extraPhotos = cleanExtra(d.foto); renderExtra(); } })
+            .catch(function () {});
+    })();
+
+    function adminCompress(file) {
+        return new Promise(function (resolve, reject) {
+            var fr = new FileReader();
+            fr.onerror = reject;
+            fr.onload = function () {
+                var im = new Image();
+                im.onerror = reject;
+                im.onload = function () {
+                    var max = 900, w = im.width, h = im.height;
+                    if (w > max) { h = Math.round(h * max / w); w = max; }
+                    var cv = document.createElement('canvas');
+                    cv.width = w; cv.height = h;
+                    cv.getContext('2d').drawImage(im, 0, 0, w, h);
+                    resolve(cv.toDataURL('image/jpeg', 0.72));
+                };
+                im.src = fr.result;
+            };
+            fr.readAsDataURL(file);
+        });
+    }
+
+    function adminFotoMsg(text, ok) {
+        var m = document.getElementById('adminFotoMsg');
+        m.className = 'admin-msg' + (ok ? ' ok' : '');
+        m.textContent = text;
+    }
+
+    var serverMode = false, adminSandi = '';
+
+    function adminModeText(t) {
+        document.querySelectorAll('.admin-mode').forEach(function (e) { e.textContent = t; });
+    }
+    function serverPost(obj) {
+        obj.sandi = adminSandi;
+        return fetch('upload.php', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(obj) })
+            .then(function (r) { return r.json(); });
+    }
+    function adminDetectServer() {
+        serverMode = false;
+        adminModeText('Memeriksa koneksi server…');
+        serverPost({ aksi: 'cek' }).then(function (j) {
+            if (j && j.ok) {
+                serverMode = true;
+                adminModeText('✓ Terhubung ke server. Klik Upload, hasilnya langsung berubah di web untuk semua pengunjung.');
+            } else if (j && j.error === 'sandi') {
+                adminModeText('Sandi di server (upload.php) belum sama dengan sandi web. Untuk sementara hasilnya berupa file unduhan.');
+            } else {
+                adminModeText('Server upload belum tersedia. Hasilnya berupa file unduhan yang perlu ditimpa di hosting web.');
+            }
+        }).catch(function () {
+            adminModeText('Server upload belum tersedia (web belum dibuka dari hosting). Hasilnya berupa file unduhan yang perlu ditimpa di hosting web.');
+        });
+    }
+
+    function adminFileChosen() {
+        var n = document.getElementById('adminFile').files.length;
+        if (n) adminFotoMsg(n + ' foto dipilih. Klik Upload Foto.', true);
+    }
+
+    function adminFotoAdd() {
+        var files = document.getElementById('adminFile').files;
+        if (!files || !files.length) {
+            if (!serverMode && extraPhotos.length) { adminFotoDownload(); return; }
+            adminFotoMsg('Pilih foto dulu (boleh banyak sekaligus).');
+            return;
+        }
+        var kat = document.getElementById('adminKat').value;
+        if (kat === '__baru__') kat = document.getElementById('adminKatBaru').value.trim();
+        if (!kat) { adminFotoMsg('Nama kategori belum diisi.'); return; }
+        var judul = document.getElementById('adminJudul').value.trim() || 'Dokumentasi Proyek';
+        var lok = document.getElementById('adminLokFoto').value.trim();
+        adminFotoMsg('Mengupload ' + files.length + ' foto…', true);
+
+        function selesai(pesan) {
+            document.getElementById('adminFile').value = '';
+            renderExtra();
+            adminFillKat();
+            document.getElementById('adminKat').value = kat;
+            adminKatChange();
+            adminFotoList();
+            adminFotoMsg(pesan, true);
+        }
+
+        Promise.all(Array.prototype.map.call(files, adminCompress)).then(function (list) {
+            if (!serverMode) {
+                list.forEach(function (g) { extraPhotos.push({ kategori: kat.slice(0, 40), judul: judul.slice(0, 80), lokasi: lok.slice(0, 100), gambar: g }); });
+                adminFotoDownload();
+                selesai('✓ ' + list.length + ' foto ditambahkan. File proyek-tambahan.json terunduh; timpa file itu di hosting web agar terlihat semua pengunjung.');
+                return;
+            }
+            var terkirim = 0, tersimpan = 0, chain = Promise.resolve();
+            for (var i = 0; i < list.length; i += 4) {
+                (function (batch) {
+                    chain = chain.then(function () {
+                        return serverPost({ aksi: 'tambah_foto', kategori: kat, judul: judul, lokasi: lok, gambar: batch }).then(function (j) {
+                            if (!j || !j.ok) throw new Error((j && j.pesan) || 'gagal');
+                            extraPhotos = cleanExtra(j.foto);
+                            terkirim += batch.length;
+                            tersimpan += j.tersimpan || 0;
+                            adminFotoMsg('Mengupload… ' + terkirim + ' dari ' + list.length, true);
+                        });
+                    });
+                })(list.slice(i, i + 4));
+            }
+            return chain.then(function () {
+                selesai('✓ ' + tersimpan + ' foto berhasil diupload dan sudah tampil di web.');
+            });
+        }).catch(function (e) {
+            var m = e && e.message && e.message !== 'gagal' ? e.message : 'tidak bisa terhubung ke server.';
+            adminFotoMsg('Gagal: ' + m);
+        });
+    }
+
+    function adminUploadLokasi() {
+        var o = adminRead();
+        if (!o) return;
+        var msg = document.getElementById('adminMsg');
+        if (!serverMode) { applyOffice(o); adminDownload(); return; }
+        msg.className = 'admin-msg ok';
+        msg.textContent = 'Mengupload…';
+        serverPost({ aksi: 'simpan_lokasi', nama: o.nama, alamat: o.alamat, linkMaps: o.linkMaps }).then(function (j) {
+            if (!j || !j.ok) throw new Error((j && j.pesan) || 'gagal');
+            applyOffice(o);
+            msg.className = 'admin-msg ok';
+            msg.textContent = '✓ Lokasi berhasil diganti dan sudah berubah di web.';
+        }).catch(function (e) {
+            msg.className = 'admin-msg';
+            msg.textContent = 'Gagal: ' + (e && e.message && e.message !== 'gagal' ? e.message : 'tidak bisa terhubung ke server.');
+        });
+    }
+
+    function adminFotoList() {
+        var box = document.getElementById('adminFotoList');
+        box.innerHTML = '';
+        extraPhotos.forEach(function (p, i) {
+            var row = document.createElement('div'); row.className = 'admin-item';
+            var im = document.createElement('img'); im.src = p.gambar; im.alt = '';
+            var sp = document.createElement('span'); sp.textContent = p.kategori + ' · ' + p.judul;
+            var bt = document.createElement('button'); bt.type = 'button'; bt.textContent = '×'; bt.title = 'Hapus foto ini';
+            bt.addEventListener('click', function () {
+                if (serverMode) {
+                    if (!confirm('Hapus foto ini dari web?')) return;
+                    serverPost({ aksi: 'hapus_foto', index: i }).then(function (j) {
+                        if (!j || !j.ok) throw new Error();
+                        extraPhotos = cleanExtra(j.foto);
+                        renderExtra(); adminFillKat(); adminFotoList();
+                        adminFotoMsg('Foto dihapus dari web.', true);
+                    }).catch(function () { adminFotoMsg('Gagal menghapus foto.'); });
+                } else {
+                    extraPhotos.splice(i, 1); renderExtra(); adminFillKat(); adminFotoList();
+                }
+            });
+            row.appendChild(im); row.appendChild(sp); row.appendChild(bt);
+            box.appendChild(row);
+        });
+    }
+
+    function adminFotoDownload() {
+        if (!extraPhotos.length) { adminFotoMsg('Belum ada foto tambahan untuk diunduh.'); return; }
+        var blob = new Blob([JSON.stringify({ foto: extraPhotos })], { type: 'application/json' });
+        var a = document.createElement('a');
+        a.href = URL.createObjectURL(blob);
+        a.download = 'proyek-tambahan.json';
+        document.body.appendChild(a); a.click(); document.body.removeChild(a);
+        
+    }
+
+    // Cara membuka panel: alamat akhiran #kelola-lokasi-pta, atau ketuk 7x teks copyright di bawah
+    function checkAdminHash() { if (location.hash === '#kelola-lokasi-pta') adminOpen(); }
+    window.addEventListener('hashchange', checkAdminHash);
+    checkAdminHash();
+    (function () {
+        var el = document.querySelector('.copyright');
+        if (!el) return;
+        var taps = 0, timer = null;
+        el.addEventListener('click', function () {
+            taps++;
+            clearTimeout(timer);
+            timer = setTimeout(function () { taps = 0; }, 2000);
+            if (taps >= 7) { taps = 0; adminOpen(); }
+        });
+    })();
+</script>
+
+    <!-- PANEL PENGELOLA LOKASI (tersembunyi; dibuka lewat #kelola-lokasi-pta atau ketuk 7x teks copyright) -->
+    <div id="adminLokasi" aria-hidden="true">
+        <div class="admin-box">
+            <div id="adminLogin">
+                <h3>🔒 Area Pemilik</h3>
+                <p class="admin-note">Masukkan kata sandi untuk mengelola website.</p>
+                <label for="adminPass">Kata sandi</label>
+                <input type="password" id="adminPass" autocomplete="off">
+                <div class="admin-msg" id="adminLoginMsg"></div>
+                <div class="admin-row">
+                    <button class="admin-btn" type="button" onclick="adminLogin()">Masuk</button>
+                    <button class="admin-btn sec" type="button" onclick="adminClose()">Tutup</button>
+                </div>
+            </div>
+            <div id="adminMenu" style="display:none;">
+                <h3>🔧 Kelola Website</h3>
+                <p class="admin-note">Pilih yang ingin diubah:</p>
+                <p class="admin-note admin-mode"></p>
+                <button class="admin-menu-btn" type="button" onclick="adminShow('foto')">🖼️ Tambah Foto Proyek<small>Tambah foto baru ke galeri, boleh membuat nama kategori baru.</small></button>
+                <button class="admin-menu-btn" type="button" onclick="adminShow('lokasi')">📍 Ubah Lokasi Kantor<small>Ganti alamat kantor dan peta.</small></button>
+                <div class="admin-row"><button class="admin-btn sec" type="button" onclick="adminClose()">Tutup</button></div>
+            </div>
+            <div id="adminForm" style="display:none;">
+                <h3>📍 Ubah Lokasi Kantor</h3>
+                <p class="admin-note">Isi alamat baru, lalu klik Upload Lokasi.</p>
+                <label for="adminNama">Nama perusahaan</label>
+                <input type="text" id="adminNama">
+                <label for="adminAlamat">Alamat kantor baru</label>
+                <textarea id="adminAlamat"></textarea>
+                <label for="adminLink">Link Google Maps (opsional, boleh link share.google / maps.app.goo.gl)</label>
+                <input type="text" id="adminLink" placeholder="https://share.google/...">
+                <div class="admin-msg" id="adminMsg"></div>
+                <div class="admin-row">
+                    <button class="admin-btn" type="button" onclick="adminUploadLokasi()">⬆️ Upload Lokasi</button>
+                    <button class="admin-btn sec" type="button" onclick="adminShow('menu')">← Kembali</button>
+                    <button class="admin-btn sec" type="button" onclick="adminClose()">Tutup</button>
+                </div>
+                <p class="admin-note admin-mode" style="margin-top:12px;"></p>
+            </div>
+            <div id="adminFoto" style="display:none;">
+                <h3>🖼️ Tambah Foto Proyek</h3>
+                <p class="admin-note">Pilih kategori (atau ketik nama kategori baru), isi keterangan, lalu pilih foto.</p>
+                <label for="adminKat">Kategori</label>
+                <select id="adminKat" onchange="adminKatChange()"></select>
+                <input type="text" id="adminKatBaru" placeholder="Ketik nama kategori baru, mis. Jalan Tol" style="display:none; margin-top:8px;" maxlength="40">
+                <label for="adminJudul">Judul foto (boleh dikosongkan)</label>
+                <input type="text" id="adminJudul" placeholder="Mis. Pengecoran Lantai" maxlength="80">
+                <label for="adminLokFoto">Lokasi / keterangan (boleh dikosongkan)</label>
+                <input type="text" id="adminLokFoto" placeholder="Mis. Medan Deli, Kota Medan" maxlength="100">
+                <label for="adminFile">Foto (boleh pilih beberapa)</label>
+                <input type="file" id="adminFile" accept="image/*" multiple onchange="adminFileChosen()">
+                <div class="admin-msg" id="adminFotoMsg"></div>
+                <div class="admin-row">
+                    <button class="admin-btn" type="button" onclick="adminFotoAdd()">⬆️ Upload Foto</button>
+                    <button class="admin-btn sec" type="button" onclick="adminShow('menu')">← Kembali</button>
+                    <button class="admin-btn sec" type="button" onclick="adminClose()">Tutup</button>
+                </div>
+                <div class="admin-list" id="adminFotoList"></div>
+                <p class="admin-note admin-mode" style="margin-top:12px;"></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
